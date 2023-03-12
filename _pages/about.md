@@ -8,9 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-About Me
-======
-
 I am currently a PhD student at The Ohio State University studying computer science and engineering, advised by [Dr. Christopher Stewart](https://www.reroutlab.org/) and [Dr. Tanya Berger-Wolf](https://cse.osu.edu/people/berger-wolf.1). I graduated with a B.S. in Industrial and Systems Engineering from OSU. During my undergraduate studies, I interned at General Electric, Georgia Pacific, and LBrands. I also participated in several short-term study abroad programs, including trips to India, Greece, Switzerland, and the U.K. After graduation, I worked as a Data Services product owner at Bath & Body Works in Columbus, Ohio. 
 
 Research Interests
