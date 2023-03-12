@@ -83,7 +83,7 @@ author:
   name             : "Jenna M. Kline"
   avatar           : "profile.png"
   bio              : "PhD Student"
-  location         : "Columbus, Ohio"
+  location         : #"Columbus, Ohio"
   employer         : "The Ohio State University"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
