@@ -9,13 +9,4 @@ location: "Columbus, OH"
 ---
 
 Lecture topics include spreadsheet and database modeling, programming concepts, and techniques to solve business related
-problems
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+problems.
