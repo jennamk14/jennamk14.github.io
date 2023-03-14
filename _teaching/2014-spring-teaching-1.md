@@ -1,14 +1,15 @@
 ---
-title: "Teaching experience 1"
+title: "CSE 2111: Modeling and Problem Solving with Spreadsheets and Databases"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: ""
+permalink: /teaching/2021-spring-teaching
+venue: "The Ohio State University, Computer Science and Engineering Department"
+date: 2021-08-01
+location: "Columbus, OH"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Lecture topics include spreadsheet and database modeling, programming concepts, and techniques to solve business related
+problems
 
 Heading 1
 ======
