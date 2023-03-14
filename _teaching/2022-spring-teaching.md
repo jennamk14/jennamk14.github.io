@@ -1,7 +1,7 @@
 ---
 title: "CSE 3244: Data Management in the Cloud"
 collection: teaching
-type: "Undergraduate Coursee"
+type: "Undergraduate Course"
 permalink: /teaching/2022-spring-teaching
 venue: "The Ohio State University, Computer Science and Engineering Department"
 date: 2022-01-12
