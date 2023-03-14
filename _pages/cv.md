@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+[PDF version](https://jennamk14.github.io/vitae/cv.pdf)
+
 {% include base_path %}
 
 Education
