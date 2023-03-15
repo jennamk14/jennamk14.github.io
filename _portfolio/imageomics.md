@@ -1,6 +1,6 @@
 ---
 title: "Imageomics Course Project 2022-2023"
-excerpt: "Imageomics Kenya Animal Behavior Project <br/><img src='/images/flying_drone.jpg'>"
+excerpt: "Imageomics Kenya Animal Behavior Project <br/><img src='/images/flying_drone.png'>"
 collection: portfolio
 ---
 
