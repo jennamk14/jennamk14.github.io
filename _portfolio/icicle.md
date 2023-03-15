@@ -4,3 +4,4 @@ excerpt: "Edge Computing Simulator for Waypoint UAV Swarm Missions <br/><img src
 collection: portfolio
 ---
 [Project Page](http://149.165.155.188:2298/index.html)
+[ICICLE Institute](https://icicle.osu.edu/)
