@@ -1,6 +1,6 @@
 ---
 title: "Imageomics Course Project"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+excerpt: "Imageomics Kenya Animal Behavior Project" <br/><img src='/images/flying_drone.jpg'>"
 collection: portfolio
 ---
 
