@@ -26,8 +26,11 @@ B.S. Industrial Engineering Cum Laude at The Ohio State University, December 201
 
 Work experience
 ======
+Los Alamos National Lab, Graduate Intern, Supercomputer Insitute
+*May 2023 - Aug 2023*
+
 The Ohio State University, Graduate Teaching Assistant 
-*Aug 2021 - present*
+*Aug 2021 - Dec 2022*
 
 Bath & Body Works, Data Service Product Owner
 *January 2019 - August 2021*
@@ -78,7 +81,7 @@ Skills
 Service & Leadership
 ======
 * ACM-W, Volunteer, Awarded Grace Hopper Celebration scholarship for graduate students *August 2022 - present*
-* GWCS, Vice President Vice President of OSU Graduate Women in Computer Science Association *August 2022 - present*
+* GWCS, Vice President Vice President of OSU Graduate Women in Computer Science Association *August 2022 - December 2022*
 
 <!--- Publications
 ======
