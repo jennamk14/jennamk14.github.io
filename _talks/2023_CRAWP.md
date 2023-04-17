@@ -1,7 +1,7 @@
 ---
 title: "Individual Identification of Zebras with Autonomous UAV Swarms"
 collection: talks
-type: "Conference proceedings talk"
+type: "Workshop Poster"
 permalink: /talks/2023_CRAWP
 venue: "2023 Computing Research Association Grad Cohort Workshop for Women (CRA-WP)"
 date: 2023-04-22
