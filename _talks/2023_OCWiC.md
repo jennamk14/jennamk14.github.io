@@ -1,7 +1,7 @@
 ---
 title: "Interdisciplinary Applications for Autonomous Unmanned Aerial Vehicles"
 collection: talks
-type: "Conference proceedings talk"
+type: "Conference talk"
 permalink: /talks/2023_OCWiC
 venue: "Ohio Celebration of Women in Computing 2023"
 date: 2023-02-25
