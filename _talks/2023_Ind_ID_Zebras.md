@@ -1,5 +1,5 @@
 ---
-title: "Individual Identification of Zebras with Autonomous UAV Swarms"
+title: "Autonomous UAV Missions for Studying Wildlife Behavior: A Case Study for the Individual Identification of Zebras"
 collection: talks
 type: "Workshop Poster"
 permalink: /talks/2023_CRAWP
