@@ -2,7 +2,7 @@
 title: "Autonomous UAV Missions for Studying Wildlife Behavior: A Case Study for the Individual Identification of Zebras"
 collection: talks
 type: "Workshop Poster"
-permalink: /talks/2023_CRAWP
+permalink: /talks/2023_Ind_ID_Zebras
 venue: "2023 Grad Cohort Workshop for Women (CRA-WP)"
 date: 2023-04-22
 location: "San Francisco, CA"
