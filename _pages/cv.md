@@ -13,11 +13,11 @@ redirect_from:
 
 Education
 ======
-PhD Computer Science Engineering at The Ohio State University, May 2026 (Expected)
+PhD Computer Science Engineering, The Ohio State University, May 2026 (Expected)
 * Major: Software Systems
-* Minors: Artificial Intellignce & Databases
+* Minors: Artificial Intellignce & Imageomics
 
-B.S. Industrial Engineering Cum Laude at The Ohio State University, December 2018 
+B.S. Industrial and Systems Engineering *Cum Laude*, The Ohio State University, December 2018 
 * Honors in Integrated Business and Engineering (IBE)
 * Major: Industrial & Systems Engineering, Data Analytics & Optimization Specialization
 * Minor: Business
