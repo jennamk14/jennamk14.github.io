@@ -7,18 +7,18 @@ redirect_from:
   - /resume
 ---
 
-[Download PDF version][Kline_Jenna_CV.pdf](https://github.com/jennamk14/jennamk14.github.io/files/11304203/Kline_Jenna_CV.pdf)
+[Download PDF version](https://github.com/jennamk14/jennamk14.github.io/files/11304203/Kline_Jenna_CV.pdf)
 
 
 {% include base_path %}
 
 Education
 ======
-PhD Computer Science Engineering, The Ohio State University, May 2026 (Expected)
+**PhD Computer Science Engineering**, The Ohio State University, May 2026 (Expected)
 * Major: Software Systems
 * Minors: Artificial Intellignce & Imageomics
 
-B.S. Industrial and Systems Engineering *Cum Laude*, The Ohio State University, December 2018 
+**B.S. Industrial and Systems Engineering *Cum Laude***, The Ohio State University, December 2018 
 * Honors in Integrated Business and Engineering (IBE)
 * Major: Industrial & Systems Engineering, Data Analytics & Optimization Specialization
 * Minor: Business
