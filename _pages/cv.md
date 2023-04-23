@@ -7,7 +7,8 @@ redirect_from:
   - /resume
 ---
 
-[PDF Version](https://github.com/jennamk14/jennamk14.github.io/files/11301552/cv.1.pdf)
+[PDF Version](https://github.com/jennamk14/jennamk14.github.io/files/11302909/Kline_Jenna.pdf)
+
 
 {% include base_path %}
 
