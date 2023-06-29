@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 [Download PDF version](https://github.com/jennamk14/jennamk14.github.io/files/11304238/Kline_Jenna_CV.pdf)
+[Resume Link](https://resume.io/r/m5UqgujdL)
 
 
 
