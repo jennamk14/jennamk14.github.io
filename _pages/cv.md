@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-[Download PDF version of CV](https://github.com/jennamk14/jennamk14.github.io/files/11983921/Kline.Jenna.CV.pdf)
+[Download PDF version of CV](https://github.com/jennamk14/jennamk14.github.io/files/Kline, Jenna CV.pdf)
 
 
 
