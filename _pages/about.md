@@ -10,7 +10,7 @@ redirect_from:
 
 I am currently a PhD student at The Ohio State University studying computer science and engineering, advised by [Dr. Christopher Stewart](https://www.reroutlab.org/) and [Dr. Tanya Berger-Wolf](https://cse.osu.edu/people/berger-wolf.1). I graduated with a B.S. in Industrial and Systems Engineering from The Ohio State University in 2018. During my undergraduate studies, I interned at General Electric, Georgia Pacific, and LBrands. I also participated in several short-term study abroad programs, including trips to India, Greece, Switzerland, and the U.K. After graduation, I worked as a Data Services Product Owner at Bath & Body Works in Columbus, Ohio. 
 
-This summer I will be interning at Los Alamos National Laboratory as a High Performance Computing (HPC) intern with the [Supercomputer Institute](https://www.lanl.gov/projects/national-security-education-center/information-science-technology/summer-schools/cscnsi/index.php).
+This past summer I interned at Los Alamos National Laboratory as a High Performance Computing (HPC) intern with the [Supercomputer Institute](https://www.lanl.gov/projects/national-security-education-center/information-science-technology/summer-schools/cscnsi/index.php).
 
 Research Interests
 ======
