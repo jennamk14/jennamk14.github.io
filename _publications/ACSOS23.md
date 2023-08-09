@@ -1,11 +1,11 @@
 ---
 title: "A Framework for Autonomic Computing for In Situ Imageomics"
 collection: publications
-permalink: https://2023.acsos.org/track/acsos-2023-papers
+permalink: /ACSOS23.md
 excerpt: 'In situ imageomics is a new approach to study ecological, biological and evolutionary systems wherein large image and video data sets are captured in the wild and machine learning methods are used to infer biological traits of individual organisms, animal social groups, species, and even whole ecosystems. Such adaptive, data-driven approaches are hamstrung by the speed at which data can be captured and processed. Our proposed autonomic navigation policy for in situ imageomics collection has an F1 score of 82% compared to an expert pilot, and provides greater safety and consistency, suggesting great potential for state-of-the-art autonomic approaches if they can be scaled up to fully address the problem.'
 date: 2023-09-25
 venue: '4th IEEE International Conference on Autonomic Computing and Self-Organizing Systems - ACSOS 2023.'
-paperurl: 'https://github.com/jennamk14/jennamk14.github.io/blob/a6dd3b76e2019ba37b621a512f145fff43001faa/files/A%20Framework%20for%20Autonomic%20Computing%20for%20In%20Situ%20Imageomics.pdf'
+paperurl: 'https://2023.acsos.org/track/acsos-2023-papers'
 citation: 'Jenna M. Kline, Christopher Stewart, et al. (2023). “A Framework for Autonomic Computing for In Situ
 Imageomics”. In: 4th IEEE International Conference on Autonomic Computing and Self-Organizing Systems - ACSOS 2023.'
 ---
