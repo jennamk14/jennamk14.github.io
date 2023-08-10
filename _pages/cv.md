@@ -60,13 +60,12 @@ Service & Leadership
 * ACM-W, Volunteer, Awarded Grace Hopper Celebration scholarship for graduate students *August 2022 - present*
 * GWCS, Vice President Vice President of OSU Graduate Women in Computer Science Association *August 2022 - December 2022*
 
-<!--- Publications
+Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
--->
-  
+
 Talks
 ======
   <ul>{% for post in site.talks %}
