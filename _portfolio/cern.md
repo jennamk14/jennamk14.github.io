@@ -1,6 +1,6 @@
 ---
 title: "IBE CERN Project 2016"
-excerpt: "Honors Integrated Business and Engineering Challenge at CERN <br/><img src='/images/IMG_1025.JPG'>"
+excerpt: "Honors Integrated Business and Engineering Challenge at CERN <br/><img src='/images/resized_cern.JPG'>"
 collection: portfolio
 ---
 
