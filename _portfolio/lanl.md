@@ -1,6 +1,6 @@
 ---
 title: "High Performance Computing (HPC) Summer Internship at Los Alamos National Lab (LANL)"
-excerpt: "HPC Summer Project at LANL" <br/><img src='/images/lanl.jpg'>
+excerpt: "HPC Summer Project at LANL <br/><img src='/images/lanl.jpg'>"
 collection: portfolio
 ---
 
