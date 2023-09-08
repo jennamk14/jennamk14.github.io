@@ -3,7 +3,7 @@ title: "Imageomics Course Project 2023"
 excerpt: "Imageomics Kenya Animal Behavior Project <br/><img src='/images/resized_flying_drones.png'>"
 collection: portfolio
 ---
-[Publication: A Framwork for Autonomic Computing for In Situ Imageomics](https://github.com/jennamk14/jennamk14.github.io/blob/master/_publications/mmls23.md)
+[Publication: A Framwork for Autonomic Computing for In Situ Imageomics](https://github.com/jennamk14/jennamk14.github.io/blob/master/_publications/mmls23.md)  
 
 [Project Homepage](https://github.com/jennamk14/jennamk14.github.io/blob/master/_publications/mmls23.md)
 
