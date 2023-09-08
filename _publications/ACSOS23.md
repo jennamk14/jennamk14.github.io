@@ -1,7 +1,7 @@
 ---
 title: "A Framework for Autonomic Computing for In Situ Imageomics"
 collection: publications
-permalink: /ACSOS23.md
+permalink: /publication/ACSOS23
 excerpt: 'In situ imageomics is a new approach to study ecological, biological and evolutionary systems wherein large image and video data sets are captured in the wild and machine learning methods are used to infer biological traits of individual organisms, animal social groups, species, and even whole ecosystems. Such adaptive, data-driven approaches are hamstrung by the speed at which data can be captured and processed. Our proposed autonomic navigation policy for in situ imageomics collection has an F1 score of 82% compared to an expert pilot, and provides greater safety and consistency, suggesting great potential for state-of-the-art autonomic approaches if they can be scaled up to fully address the problem.'
 date: 2023-09-25
 venue: '4th IEEE International Conference on Autonomic Computing and Self-Organizing Systems - ACSOS 2023.'
