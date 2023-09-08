@@ -7,13 +7,7 @@ redirect_from:
   - /resume
 ---
 
-[Download PDF version of CV](https://github.com/jennamk14/jennamk14.github.io/blob/5771842dfbc8a067657fe561061f38f06b8f99a6/files/Kline%2C%20Jenna%20CV.pdf)
-
-
-
-[Resume Link](https://resume.io/r/m5UqgujdL)
-
-
+[PDF version of Curriculum vitae](https://github.com/jennamk14/jennamk14.github.io/files/12561253/Kline_Jenna_Curriculum_Vitae.pdf)
 
 {% include base_path %}
 
@@ -58,7 +52,7 @@ Skills
 Service & Leadership
 ======
 * ACM-W, Volunteer, Awarded Grace Hopper Celebration scholarship for graduate students *August 2022 - present*
-* GWCS, Vice President Vice President of OSU Graduate Women in Computer Science Association *August 2022 - December 2022*
+* Code I/O Volunteer, Volunteer at free coding camp for students aged 10-15
 
 Publications
 ======
