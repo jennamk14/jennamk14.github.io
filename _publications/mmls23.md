@@ -2,7 +2,7 @@
 title: "Autonomous UAV Missions for Studying Wildlife Behavior: A Case Study for the Individual Identification of Zebras"
 collection: publications
 permalink: /publication/mmls23
-excerpt: 'Combing UAVs with machine learning techniques to make missions fully autonomous significantly reduces the barriers to utilizing UAV technology to collect high-quality animal ecology data in the field.'
+excerpt: 'Combining UAVs with machine learning techniques to make missions fully autonomous significantly reduces the barriers to utilizing UAV technology to collect high-quality animal ecology data in the field.'
 date: 2023-05-16
 venue: 'Midwest Machine Learning Symposium (MMLS) 2023'
 paperurl: 'https://midwest-ml.org/2023/talks/posters.html'
