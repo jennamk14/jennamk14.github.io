@@ -53,7 +53,7 @@ Service & Leadership
 ======
 * ACM-W, Volunteer, Awarded Grace Hopper Celebration scholarship for graduate students *August 2022 - present*
 * Code I/O Volunteer, Volunteer at free coding camp for students aged 10-15
-* Workshop Organizer, Served on organizing committee for Image Datapalooza 2023: Tackling ML-ready image and video datasets for science [https://imageomics.osu.edu/news/2023/08/image-datapalooza-recap](DataPalooza Event Recap)
+* Workshop Organizer, Served on organizing committee for Image Datapalooza 2023: Tackling ML-ready image and video datasets for science [DataPalooza Event Recap](https://imageomics.osu.edu/news/2023/08/image-datapalooza-recap)
 
 Publications
 ======
