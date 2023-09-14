@@ -7,7 +7,8 @@ redirect_from:
   - /resume
 ---
 
-[PDF version of Curriculum vitae](https://github.com/jennamk14/jennamk14.github.io/files/12561253/Kline_Jenna_Curriculum_Vitae.pdf)
+[PDF version of Curriculum vitae](https://github.com/jennamk14/jennamk14.github.io/files/12603206/Kline_CV.pdf)
+
 
 {% include base_path %}
 
