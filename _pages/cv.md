@@ -9,9 +9,6 @@ redirect_from:
 
 [PDF version of Curriculum vitae](https://github.com/jennamk14/jennamk14.github.io/files/12603206/Kline_CV.pdf)
 
-<a href="https://github.com/jennamk14/jennamk14.github.io/files/12603206/Kline_CV.pdf">PDF version of Curriculum vitae</a>
-
-
 {% include base_path %}
 
 Education
