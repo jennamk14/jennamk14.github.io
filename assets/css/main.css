@@ -3323,3 +3323,18 @@ input, select, textarea {
 			}
 
 	}
+
+	#projects .grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+	
+	#projects .grid-item {
+		text-align: center;
+	}
+	
+	#projects .grid-item .image img {
+		width: 100%;
+		height: auto;
+	}
