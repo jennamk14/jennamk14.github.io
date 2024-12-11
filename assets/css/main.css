@@ -2041,7 +2041,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
-		color: #f4f4f4;
+		color: #294b5d; /* primary */
 	}
 
 		.icon:before {
