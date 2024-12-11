@@ -2041,6 +2041,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		color: #f4f4f4;
 	}
 
 		.icon:before {
@@ -3339,6 +3340,12 @@ input, select, textarea {
 				padding: 0;
 			}
 
+	}
+
+	.grid-container2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
 	}
 
 	#projects .grid-container {
