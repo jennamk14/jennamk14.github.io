@@ -33,7 +33,7 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">About</a></li>
-						<li><a href="projects.html">Projects</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li><a href="#two">Publications</a></li>
 						<li><a href="#three">Talks</a></li>
 						<li><a href="#four">Teaching</a></li>
@@ -71,20 +71,16 @@
 								</header>
 								<div class="grid-container">
 									<div class="grid-item">
-										<p>I'm a PhD candidate in Computer Science and Engineering at The Ohio State University, advised by 
-											Dr. Christopher Stewart and Dr. Tanya Berger-Wolf (expected graduation: Summer 2026).
-											<br>
-											<br>
-											My research develops autonomous, distributed AI-augmented sensing systems
-											systems that combine edge computing, computer vision, and robotics. 
-											I focus on enabling real-time, adaptive environmental monitoring by pushing 
-											decision-making to the edge. 
-											This allows systems to autonomously adjust their sensing 
-											strategies to capture dynamic phenomena, such as like animal movements and weather changes,
-											to augment expert decision-making, without constant human intervention.
-											My goal is to improve ecological research and 
-											conservation at scale.</p>
-										</div>
+										<p>I am a PhD candidate studying computer science and engineering at The Ohio State University, 
+										with an expected graduation date of <b>Spring 2026</b>.</p>
+										
+										<p><i>Currently looking for Fall 2026 opportunities!</i></p>
+
+										<p> Environmental monitoring in dynamic, hard-to-access landscapes requires sensing systems that can adapt as conditions change. My research develops <strong>autonomous, multimodal remote sensing systems</strong> that combine <em>edge computing</em>, <em>computer vision</em>, and <em>robotics</em> to enable adaptive data collection for ecological studies. </p> <p> I focus on building <strong>agentic edge systems</strong> capable of making real-time decisions in the field by adjusting their sensing and sampling strategies based on environmental conditions and the data they observe. These systems operate directly on the edge to enhance data quality, expand observational capabilities, and support large-scale ecological research and conservation. </p> <p> Through cross-disciplinary collaboration with ecologists, land managers, and conservation practitioners, my work connects advanced AI capabilities with practical environmental monitoring needs to assist researchers in better understanding and protecting natural ecosystems. </p>
+						
+										<p>I am fortunate to be coadvised by <a href="https://cse.osu.edu/people/stewart.962">Dr. Christopher Stewart</a> and <a href="https://cse.osu.edu/people/berger-wolf.1">Dr. Tanya Berger-Wolf</a>, 
+										and contribute to the <a href="https://icicle.osu.edu/">ICICLE</a> and <a href="https://imageomics.osu.edu/">Imageomics</a> Research Institutes at OSU.</p>
+									</div>
 							  
 									<div class="grid-item">
 										<p>Check out my posts on bsky! 🦋</p>
@@ -105,50 +101,65 @@
 
 							<section id="projects">
 								<div class="container">
-									<h3>Projects <a href="projects.html" style="font-size: 0.6em; margin-left: 1em;">(View All)</a></h3>
+									<h3>Projects</h3>
 									<div class="features">
 
 										<article>
-											<h4>Project Management Tool for Research</h4>
-											<p>
-												<a href="projects.html#project-management" class="button small">View Details</a>
-												<a href="https://github.com/jennamk14/academic_project_tracker" class="button small">Documentation</a>
-											</p>
-										</article>
-
-										<article>
-											<h4>WildLabs Edge Computing Group, Co-lead, 2025–2026 Group Leadership Programme.</h4>
-											<p>
-												<a href="projects.html#edge-computing" class="button small">View Details</a>
-												<a href="https://wildlabs.net/groups/edge-computing" class="button small">Join Group</a>
-											</p>
+											<a href="https://wildlabs.net/groups/edge-computing" class="image">
+												<img src="images/edgeconservationgroup.png" alt="edge-conservation" />
+											</a>
+											<div class="inner">
+												<h4>WildLabs Edge Computing Group, Co-lead, 2025–2026 Group Leadership Programme.</h4>
+												<p>This group unites those working at the intersection of edge AI and conservation, 
+													focusing on real-time, on-device data processing for environmental monitoring to facilitate sharing tools,
+													 models, and strategies to overcome challenges in remote, low-connectivity areas. <a href="https://wildlabs.net/groups/edge-computing">Join here!</a><br>
+													 Check out a curated list of <a href="https://jennamk14.github.io/edge_ai_conservation/">edge AI for conservation resources</a>.
+													</p>
+											</div>
 										</article>
 
 
 										<article>
-											<h4>SmartWilds: Bridging Digital and Natural Worlds</h4>
-											<p>
-												<a href="projects.html#smartwilds" class="button small">View Details</a>
-												<a href="https://arxiv.org/pdf/2509.18894" class="button small">Read Preprint</a>
-											</p>
+											<a href="https://imageomics.github.io/naturelab/" class="image">
+												<img src="images/thewildssafari.jpeg" alt="nature-labs" />
+											</a>
+											<div class="inner">
+												<a href="https://imageomics.github.io/naturelab/"><h4>SmartWilds: Bridging Digital and Natural Worlds</h4></a>
+									
+												In collaboration with <a href="https://www.thewilds.org/">The Wilds</a>, we are developing autonomous drones and edge AI systems for wildlife monitoring and conservation in this 10,000-acre
+													non-profit safari park and conservation center in southeastern Ohio. <br>
+													
+													Check out the <a href="https://arxiv.org/pdf/2509.18894">preprint</a> and <a href="https://huggingface.co/collections/imageomics/smartwilds-6880ec9381da004aa5682cf6">dataset on HuggingFace</a>.
+											</div>
 										</article>
 
 										<article>
-											<h4>kabr-tools: Automated Framework for Multi-Species Behavioral Monitoring</h4>
-											<p>
-												<a href="projects.html#kabr" class="button small">View Details</a>
-												<a href="https://imageomics.github.io/KABR/" class="button small">Documentation</a>
-											</p>
+											<a href="https://imageomics.github.io/KABR/" class="image">
+												<img src="images/kabr.gif" alt="kabr-tools" />
+											</a>
+											<div class="inner">
+												<h4>kabr-tools: Automated Framework for Multi-Species Behavioral Monitoring</h4>
+												
+												Watching wildlife at scale is hard—traditional field observations are slow and limited. 
+												That’s why we built kabr-tools: an open-source system using drones + ML to automatically track multiple species and extract behavioral, 
+												social & spatial patterns. Check out the <a href="https://imageomics.github.io/KABR/">documentation</a> and read the <a href="https://arxiv.org/abs/2510.02030">preprint on arXiv</a>.</p>
+								
+
+											</div>
 										</article>
 
 					
 
 										<article>
-											<h4>AI-Driven Animal Ecology Workloads at the Edge</h4>
-											<p>
-												<a href="projects.html#adae" class="button small">View Details</a>
-												<a href="https://jennamk14.github.io/adae_model/" class="button small">Try Interactive Tool</a>
-											</p>
+											<a href="https://github.com/jennamk14/adae_model" class="image">
+												<img src="images/adae.png" alt="adae-model" />
+											</a>
+											<div class="inner">
+												<h4>AI-Driven Animal Ecology Workloads at the Edge</h4>
+												<p>Tool for haracterizing and modeling AI-Driven Animal Ecology (ADAE) studies at the edge. Try it out yourself <a href="https://jennamk14.github.io/adae_model/">here</a>. </p>
+
+
+											</div>
 										</article>
 									</div>
 								</div>
