@@ -220,6 +220,9 @@
     html,.deck{scroll-behavior:auto}
   }
 </style>
+<!-- GoatCounter analytics -->
+<script data-goatcounter="https://jennamk14.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <canvas id="sky"></canvas>
@@ -463,7 +466,7 @@
         <div class="kicker">🦋 LATEST · BLUESKY</div>
         <div class="bsky-post">
           <span class="handle"><a href="https://bsky.app/profile/jennakline.bsky.social" target="_blank" rel="noopener" style="color:inherit">@jennakline.bsky.social</a></span>
-          Back from the field at The Wilds — new SmartWilds multimodal data drops soon. Zebras, drones, and a lot of edge inference. 🛩️
+          <a id="bsky-latest" href="https://bsky.app/profile/jennakline.bsky.social" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Back from the field at The Wilds — new SmartWilds multimodal data drops soon. Zebras, drones, and a lot of edge inference. 🛩️</a>
         </div>
       </div>
     </div>
@@ -610,6 +613,32 @@
     if(reduce){renderSky(); draw();}}
   applyTheme('day');
   btn.addEventListener('click',function(){applyTheme(theme==='night'?'day':'night');});
+})();
+</script>
+
+<!-- Latest Bluesky post (public API, no auth) -->
+<script>
+(function(){
+  var handle='jennakline.bsky.social';
+  var el=document.getElementById('bsky-latest');
+  if(!el) return;
+  var url='https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed'
+        +'?actor='+encodeURIComponent(handle)+'&limit=10&filter=posts_no_replies';
+  fetch(url)
+    .then(function(r){return r.ok?r.json():Promise.reject(r.status);})
+    .then(function(d){
+      var feed=(d&&d.feed)||[];
+      var item=null;
+      for(var i=0;i<feed.length;i++){ if(!feed[i].reason){item=feed[i];break;} } // skip reposts
+      if(!item) item=feed[0];
+      if(!item||!item.post) return;
+      var post=item.post, text=(post.record&&post.record.text||'').trim();
+      if(!text) return;
+      el.textContent=text;
+      var rkey=(post.uri||'').split('/').pop();
+      if(rkey) el.href='https://bsky.app/profile/'+handle+'/post/'+rkey;
+    })
+    .catch(function(){ /* leave fallback text in place */ });
 })();
 </script>
 </body>
