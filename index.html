@@ -114,6 +114,28 @@
     text-decoration:none;letter-spacing:.06em;color:var(--mist);transition:.2s}
   .chip:hover{background:var(--moss);border-color:var(--moss);color:var(--ground)}
 
+  /* ---- RESEARCH INTEREST FLIP CARDS ---- */
+  .flip{position:relative;perspective:1200px;min-height:300px;cursor:pointer;outline:none}
+  .flip-inner{position:absolute;inset:0;transition:transform .7s cubic-bezier(.2,.7,.2,1);
+    transform-style:preserve-3d}
+  .flip.on .flip-inner{transform:rotateY(180deg)}
+  .flip-face{position:absolute;inset:0;overflow:auto;
+    -webkit-backface-visibility:hidden;backface-visibility:hidden;
+    border:1px solid var(--line);background:var(--card);border-radius:3px;padding:1.4rem 1.3rem;
+    display:flex;flex-direction:column;gap:.85rem;transition:border-color .35s ease,background .35s ease}
+  .flip-back{transform:rotateY(180deg)}
+  .flip:hover .flip-face,.flip:focus-visible .flip-face{border-color:var(--moss);background:var(--hover)}
+  .flip:focus-visible{outline:2px solid var(--moss);outline-offset:4px;border-radius:3px}
+  .flip h4{font-size:1.02rem;line-height:1.25;font-weight:700}
+  .flip .fdesc{font-size:.9rem;color:var(--mist);opacity:.82;margin:0}
+  .flip-cue{margin-top:auto;font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;color:var(--hud);
+    display:flex;align-items:center;justify-content:space-between;gap:.6rem}
+  .flip-back .flip-cue{justify-content:flex-start;gap:.4rem}
+  .flip-turn{color:var(--moss);font-size:1rem;transition:transform .3s}
+  .flip:hover .flip-turn{transform:rotate(180deg)}
+  .flip-links{display:flex;flex-direction:column;gap:.5rem;margin-top:.1rem}
+  .flip-links .chip{display:block;text-align:left;font-family:var(--mono);font-size:.68rem}
+
   /* ---- PUBLICATIONS ---- */
   .pubs{display:flex;flex-direction:column;gap:.2rem;margin-top:2rem;
     border-top:1px solid var(--line)}
@@ -217,6 +239,7 @@
   @media (prefers-reduced-motion:reduce){
     .rv{opacity:1;transform:none;transition:none}
     .scrollcue .bar{animation:none}
+    .flip-inner{transition:none}
     html,.deck{scroll-behavior:auto}
   }
 </style>
@@ -237,10 +260,10 @@
     <div class="hero-inner">
       <div class="eyebrow">Lat 0.0167°N · Lon 37.9083°E · Ol Pejeta → Cambridge, MA</div>
       <h1 class="hero-name"><span>Jenna M.</span><span>Kline</span></h1>
-      <p class="hero-tag">Edge&nbsp;AI–driven autonomous environmental sensing. Designing multimodal observation systems for expert-on-the-loop monitoring at the far edge.</p>
+      <p class="hero-tag">Edge&nbsp;AI–driven autonomous environmental sensing. </p>
       <div class="hero-meta">
-        <span>PhD · <b>OSU</b></span>
-        <span>Postdoc · <b>MIT</b></span>
+        <span>PhD, <b>Ohio State</b></span>
+        <span>Postdoctoral Researcher, <b>MIT</b></span>
         <span>Field ⇄ Edge ⇄ AI</span>
       </div>
     </div>
@@ -257,16 +280,88 @@
       <div>
         <div class="eyebrow">Waypoint 01 / About</div>
         <p class="lede rv d1">My research develops <b>autonomous, distributed AI-driven sensing systems</b> that combine edge computing, computer vision, and robotics.</p>
-        <p class="rv d2">I arned my PhD in Computer Science &amp; Engineering at The Ohio State University, advised by Dr. Christopher Stewart and Dr. Tanya Berger-Wolf. I recently joined <b style="color:var(--moss)">MIT in the Civil &amp; Environmental Engineering Department</b> as a postdoc with Dr. Heidi Nepf, using drones and computer vision for <b style="color:var(--moss)">coastal resilience</b> monitoring, with the <a href="https://climateproject.mit.edu/building-coastal-resilience" style="color:var(--moss);text-decoration:underline;text-underline-offset:2px">MIT Climate Project</a>.</p>
+        <p class="rv d2">I earned my PhD in Computer Science &amp; Engineering at The Ohio State University, advised by Dr. Christopher Stewart and Dr. Tanya Berger-Wolf. I recently joined <b style="color:var(--moss)">MIT in the Civil &amp; Environmental Engineering Department</b> as a postdoc with Dr. Heidi Nepf, using drones and computer vision for <b style="color:var(--moss)">coastal resilience</b> monitoring, with the <a href="https://climateproject.mit.edu/building-coastal-resilience" style="color:var(--moss);text-decoration:underline;text-underline-offset:2px">MIT Climate Project</a>.</p>
         <p class="rv d3">I focus on enabling real-time, adaptive environmental monitoring by pushing decision-making to the edge. This allows systems to autonomously adjust their sensing strategies to capture dynamic phenomena and to assist expert decision-making without constant human intervention. My goal is to improve ecological research and conservation at scale.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ PUBLICATIONS ============ -->
-  <section class="scene" data-wp="02" data-label="PUBLICATIONS">
+  <!-- ============ RESEARCH INTERESTS ============ -->
+  <section class="scene dark alt" data-wp="02" data-label="RESEARCH">
     <div class="wrap">
-      <div class="eyebrow">Waypoint 02 / Publications</div>
+      <div class="eyebrow rv">Waypoint 02 / Research interests</div>
+      <h2 class="rv d1">Research interests</h2>
+      <p class="rv d1" style="color:var(--mist);opacity:.8;max-width:62ch;margin-top:.9rem">My research builds systems that extend expert observation across dynamic environments, spanning behavior-aware drones to multimodal monitoring of nature-based infrastructure.</p>
+      <p class="rv d1" style="color:var(--hud);font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;margin-top:.4rem">Tap a card to see related papers &amp; projects</p>
+      <div class="cards">
+        <div class="flip rv d1" tabindex="0" role="button" aria-label="Adaptive autonomous sensing — show related papers and projects">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="idx">RI–01</span>
+              <h4>Adaptive autonomous systems</h4>
+              <p class="fdesc">Edge AI and autonomous sensing systems that decide in real time how to observe, adapting sampling and inference under constrained compute and connectivity to capture dynamic phenomena while keeping domain experts on the loop.</p>
+              <div class="flip-cue"><span>edge AI · autonomy · expert-on-the-loop</span><span class="flip-turn">↻</span></div>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="idx">RI–01 Systems · Related work</span>
+              <div class="flip-links">
+                <a class="chip" href="https://arxiv.org/abs/2512.02285" target="_blank" rel="noopener">Edge-Native Drone System · SEC ’25</a>
+                <a class="chip" href="https://doi.org/10.1109/SEC62691.2024.00025" target="_blank" rel="noopener">Modeling Edge Ecology · SEC ’24</a>
+                <a class="chip" href="https://par.nsf.gov/servlets/purl/10530238" target="_blank" rel="noopener">Autonomic Computing · ACSOS ’23</a>
+                <a class="chip" href="https://imageomics.github.io/wildwing/" target="_blank" rel="noopener">Project · WildWing</a>
+              </div>
+              <div class="flip-cue"><span class="flip-turn">↩</span><span>back</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="flip rv d2" tabindex="0" role="button" aria-label="Multimodal environmental intelligence — show related papers and projects">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="idx">RI–02</span>
+              <h4>Multimodal environmental intelligence</h4>
+              <p class="fdesc">Connecting fine-scale field measurements to landscape-scale indicators across sensors, sites, and time.</p>
+              <div class="flip-cue"><span>multimodal · computer vision · sensor fusion</span><span class="flip-turn">↻</span></div>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="idx">RI–02 Intelligence· Related work</span>
+              <div class="flip-links">
+                <a class="chip" href="https://doi.org/10.1111/2041-210X.70128" target="_blank" rel="noopener">Collective Behaviour · MEE ’25</a>
+                <a class="chip" href="https://arxiv.org/abs/2504.07744" target="_blank" rel="noopener">MMLA Dataset · CV4Animals ’25</a>
+                <a class="chip" href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener">Project · SmartWilds</a>
+                <a class="chip" href="https://imageomics.github.io/KABR/" target="_blank" rel="noopener">Project · kabr-tools</a>
+              </div>
+              <div class="flip-cue"><span class="flip-turn">↩</span><span>back</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="flip rv d3" tabindex="0" role="button" aria-label="Open ecological data infrastructure — show related papers and projects">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="idx">RI–03</span>
+              <h4>Open ecological data infrastructure</h4>
+              <p class="fdesc">Reproducible, AI-ready data standards and open-source tools that make heterogeneous field observations findable, interoperable, and reusable, so ecological data can be combined, benchmarked, and built upon.</p>
+              <div class="flip-cue"><span>AI-ready data · open standards · reproducibility</span><span class="flip-turn">↻</span></div>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="idx">RI–03 Data · Related work</span>
+              <div class="flip-links">
+                <a class="chip" href="https://imageomics.github.io/fair_drones/" target="_blank" rel="noopener">Project · FAIR² Drones</a>
+                <a class="chip" href="https://imageomics.github.io/mmla/" target="_blank" rel="noopener">Dataset · MMLA</a>
+                <a class="chip" href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener">Dataset · SmartWilds</a>
+                <a class="chip" href="https://imageomics.github.io/KABR/" target="_blank" rel="noopener">Dataset · KABR</a>
+              </div>
+              <div class="flip-cue"><span class="flip-turn">↩</span><span>back</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section class="scene" data-wp="03" data-label="PUBLICATIONS">
+    <div class="wrap">
+      <div class="eyebrow">Waypoint 03 / Publications</div>
       <h2 class="rv">Selected papers</h2>
       <p class="rv d1" style="color:var(--hud);font-family:var(--mono);font-size:.8rem;letter-spacing:.03em"> <a href="https://scholar.google.com/citations?user=bhNDuigAAAAJ&amp;hl=en" style="color:var(--moss)">Full list on Google Scholar →</a></p>
       <div class="pubs rv d1">
@@ -294,14 +389,32 @@
             <div class="venue">Methods in Ecology &amp; Evolution</div></div>
           <span class="plinks"><a href="https://doi.org/10.1111/2041-210X.70018" target="_blank" rel="noopener">Paper</a> · <a href="https://imageomics.github.io/wildwing/" target="_blank" rel="noopener">Code</a></span>
         </div>
+        <div class="pub">
+          <span class="yr">2025</span>
+          <div><h4>MMLA: Multi-Environment, Multi-Species, Low-Altitude Aerial Footage Dataset</h4>
+            <div class="venue">CVPR 2025 · CV4Animals Workshop</div></div>
+          <span class="plinks"><a href="https://arxiv.org/abs/2504.07744" target="_blank" rel="noopener">Paper</a> · <a href="https://imageomics.github.io/mmla/" target="_blank" rel="noopener">Project</a></span>
+        </div>
+        <div class="pub">
+          <span class="yr">2024</span>
+          <div><h4>Decentralized Multi-Drone Coordination for Wildlife Video Acquisition</h4>
+            <div class="venue">IEEE ACSOS 2024</div></div>
+          <span class="plinks"><a href="https://2024.acsos.org/details/acsos-2024-papers/7/Decentralized-Multi-Drone-Coordination-for-Wildlife-Video-Acquisition" target="_blank" rel="noopener">Paper</a></span>
+        </div>
+        <div class="pub">
+          <span class="yr">2023</span>
+          <div><h4>A Framework for Autonomic Computing for In Situ Imageomics</h4>
+            <div class="venue">IEEE ACSOS 2023</div></div>
+          <span class="plinks"><a href="https://par.nsf.gov/servlets/purl/10530238" target="_blank" rel="noopener">Paper</a></span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============ TALKS ============ -->
-  <section class="scene dark alt" data-wp="03" data-label="TALKS">
+  <section class="scene dark alt" data-wp="04" data-label="TALKS">
     <div class="wrap">
-      <div class="eyebrow rv">Waypoint 03 / Invited talks</div>
+      <div class="eyebrow rv">Waypoint 04 / Invited talks</div>
       <h2 class="rv d1">Talks &amp; presentations</h2>
       <div class="scrollnote rv d1">↕ Scroll the log</div>
       <div class="newsscroll rv d1">
@@ -344,38 +457,56 @@
   </section>
 
   <!-- ============ PROJECTS ============ -->
-  <section class="scene dark" data-wp="04" data-label="PROJECTS">
+  <section class="scene dark" data-wp="05" data-label="PROJECTS">
     <div class="wrap">
-      <div class="eyebrow rv">Waypoint 04 / Projects</div>
+      <div class="eyebrow rv">Waypoint 05 / Projects</div>
       <h2 class="rv d1">Projects</h2>
-      <p class="rv d1" style="color:var(--mist);opacity:.75;font-family:var(--mono);font-size:.78rem;letter-spacing:.03em;margin-top:.9rem">Open-source tools, works in review, and personal side projects.</p>
+      <p class="rv d1" style="color:var(--mist);opacity:.75;font-family:var(--mono);font-size:.78rem;letter-spacing:.03em;margin-top:.9rem">Field-deployed systems, datasets, open standards, and the tools that support them.</p>
       <div class="cards">
         <div class="card rv d1">
           <span class="idx">PL–01</span>
-          <h4>Project Management Tool for Research</h4>
-          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">A lightweight tracker for coordinating multi-student, multi-site field research.</p>
-          <div class="links"><a class="chip" href="projects.html#project-management">Details</a><a href="https://github.com/jennamk14/academic_project_tracker" target="_blank" rel="noopener" class="chip">Docs</a></div>
+          <h4>WildWing</h4>
+          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Open-source, autonomous, affordable UAS for animal behaviour video monitoring.</p>
+          <div class="links"><a class="chip" href="projects.html#wildwing">Details</a><a href="https://doi.org/10.1111/2041-210X.70018" target="_blank" rel="noopener" class="chip">Paper</a><a href="https://imageomics.github.io/wildwing/" target="_blank" rel="noopener" class="chip">Code</a></div>
         </div>
         <div class="card rv d2">
           <span class="idx">PL–02</span>
+          <h4>SmartWilds</h4>
+          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Synchronized multimodal wildlife-monitoring dataset — drones, camera traps, and bioacoustics.</p>
+          <div class="links"><a class="chip" href="projects.html#smartwilds">Details</a><a href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener" class="chip">Website</a></div>
+        </div>
+        <div class="card rv d3">
+          <span class="idx">PL–03</span>
+          <h4>KABR &amp; MMLA</h4>
+          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Field-collected drone-video datasets and an open framework for multi-species behavior recognition.</p>
+          <div class="links"><a class="chip" href="projects.html#kabr">Details</a><a href="https://imageomics.github.io/mmla/" target="_blank" rel="noopener" class="chip">MMLA</a></div>
+        </div>
+        <div class="card rv d1">
+          <span class="idx">PL–04</span>
           <h4>FAIR² Drones</h4>
           <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">An AI-ready standard for cross-domain wildlife drone datasets.</p>
           <div class="links"><a class="chip" href="projects.html#fair-drones">Details</a><a href="https://imageomics.github.io/fair_drones/" target="_blank" rel="noopener" class="chip">Website</a></div>
         </div>
-        <div class="card rv d3">
-          <span class="idx">PL–03</span>
+        <div class="card rv d2">
+          <span class="idx">PL–05</span>
           <h4>kabr-tools</h4>
-          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Automated framework for multi-species behavioral monitoring.</p>
-          <div class="links"><a class="chip" href="projects.html#kabr">Details</a><a href="https://imageomics.github.io/KABR/" target="_blank" rel="noopener" class="chip">Docs</a></div>
+          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Open-source framework for automated multi-species behavioral monitoring.</p>
+          <div class="links"><a class="chip" href="projects.html#kabr">Details</a><a href="https://github.com/imageomics/KABR" target="_blank" rel="noopener" class="chip">GitHub</a></div>
+        </div>
+        <div class="card rv d3">
+          <span class="idx">PL–06</span>
+          <h4>Research Project Tracker</h4>
+          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">A lightweight tool for coordinating multi-student, multi-site field research.</p>
+          <div class="links"><a class="chip" href="projects.html#project-management">Details</a><a href="https://github.com/jennamk14/academic_project_tracker" target="_blank" rel="noopener" class="chip">Docs</a></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ TEACHING ============ -->
-  <section class="scene" data-wp="05" data-label="TEACHING">
+  <section class="scene" data-wp="06" data-label="TEACHING">
     <div class="wrap">
-      <div class="eyebrow">Waypoint 05 / Teaching</div>
+      <div class="eyebrow">Waypoint 06 / Teaching</div>
       <h2 class="rv">In the classroom</h2>
       <div class="teach">
         <div class="course rv d1">
@@ -395,9 +526,9 @@
   </section>
 
   <!-- ============ NEWS · FLIGHT LOG ============ -->
-  <section class="scene dark" data-wp="06" data-label="NEWS">
+  <section class="scene dark" data-wp="07" data-label="NEWS">
     <div class="wrap">
-      <div class="eyebrow rv">Waypoint 06 / Flight log</div>
+      <div class="eyebrow rv">Waypoint 07 / Flight log</div>
       <h2 class="rv d1">News</h2>
       <div class="scrollnote rv d1">↕ Scroll the log &nbsp;·&nbsp; <span style="color:var(--star)">★</span> denotes a prize, award, or honor</div>
       <div class="newsscroll rv d1">
@@ -462,10 +593,10 @@
   </section>
 
   <!-- ============ CONTACT ============ -->
-  <section class="scene dark alt" data-wp="07" data-label="CONTACT">
+  <section class="scene dark alt" data-wp="08" data-label="CONTACT">
     <div class="wrap contact-grid">
       <div>
-        <div class="eyebrow rv">Waypoint 07 / Contact</div>
+        <div class="eyebrow rv">Waypoint 08 / Contact</div>
         <h2 class="rv d1">Let's build the<br>next smart system.</h2>
         <p class="rv d2" style="color:var(--mist);font-family:var(--mono);font-size:.9rem;margin-top:1.4rem">kline.377 [at] osu.edu</p>
         <div class="social rv d2">
@@ -519,6 +650,16 @@
     es.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('in');rvObs.unobserve(en.target);} });
   },{root:document.getElementById('deck'),threshold:.15});
   document.querySelectorAll('.rv').forEach(function(el){rvObs.observe(el);});
+
+  /* ---- research-interest flip cards (click / keyboard) ---- */
+  document.querySelectorAll('.flip').forEach(function(fl){
+    function toggle(){fl.classList.toggle('on');fl.setAttribute('aria-pressed',fl.classList.contains('on'));}
+    fl.setAttribute('aria-pressed','false');
+    fl.addEventListener('click',function(e){ if(e.target.closest('a')) return; toggle(); });
+    fl.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}
+    });
+  });
 
   var deck=document.getElementById('deck');
 
