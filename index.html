@@ -115,7 +115,7 @@
   .chip:hover{background:var(--moss);border-color:var(--moss);color:var(--ground)}
 
   /* ---- RESEARCH INTEREST FLIP CARDS ---- */
-  .flip{position:relative;perspective:1200px;min-height:300px;cursor:pointer;outline:none}
+  .flip{position:relative;perspective:1200px;min-height:340px;cursor:pointer;outline:none}
   .flip-inner{position:absolute;inset:0;transition:transform .7s cubic-bezier(.2,.7,.2,1);
     transform-style:preserve-3d}
   .flip.on .flip-inner{transform:rotateY(180deg)}
@@ -183,6 +183,10 @@
   .talk h4{font-size:1.04rem;font-weight:700;line-height:1.28}
   .talk .venue{font-family:var(--mono);font-size:.72rem;color:var(--hud);margin-top:.35rem;letter-spacing:.03em}
   .talk .venue .award{color:var(--moss);font-weight:600}
+  /* ---- FORMAT TAG (pill; distinct from moss link-brackets) ---- */
+  .venue .fmt{display:inline-block;font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--moss);border:1px solid rgba(151,168,96,.4);border-radius:3px;
+    padding:.06rem .34rem;margin-right:.5rem;font-weight:600;vertical-align:.1em}
 
   /* ---- TEACHING ---- */
   .teach{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-top:2.2rem}
@@ -259,11 +263,13 @@
     <div class="hero-veil"></div>
     <div class="hero-inner">
       <div class="eyebrow">Lat 0.0167°N · Lon 37.9083°E · Ol Pejeta → Cambridge, MA</div>
-      <h1 class="hero-name"><span>Jenna M.</span><span>Kline</span></h1>
-      <p class="hero-tag">Edge&nbsp;AI–driven autonomous environmental sensing. </p>
+      <h1 class="hero-name"><span>Jenna M.</span> <span>Kline</span></h1>
+      <p class="hero-tag">Field-deployed intelligent systems for coordinated, adaptive ecosystem observation at the far edge.</p>
       <div class="hero-meta">
         <span>PhD, <b>Ohio State</b></span>
+        <span aria-hidden="true" style="color:var(--moss);opacity:.6">·</span>
         <span>Postdoctoral Researcher, <b>MIT</b></span>
+        <span aria-hidden="true" style="color:var(--moss);opacity:.6">·</span>
         <span>Field ⇄ Edge ⇄ AI</span>
       </div>
     </div>
@@ -279,9 +285,9 @@
       </div>
       <div>
         <div class="eyebrow">Waypoint 01 / About</div>
-        <p class="lede rv d1">My research develops <b>autonomous, distributed AI-driven sensing systems</b> that combine edge computing, computer vision, and robotics.</p>
-        <p class="rv d2">I earned my PhD in Computer Science &amp; Engineering at The Ohio State University, advised by Dr. Christopher Stewart and Dr. Tanya Berger-Wolf. I recently joined <b style="color:var(--moss)">MIT in the Civil &amp; Environmental Engineering Department</b> as a postdoc with Dr. Heidi Nepf, using drones and computer vision for <b style="color:var(--moss)">coastal resilience</b> monitoring, with the <a href="https://climateproject.mit.edu/building-coastal-resilience" style="color:var(--moss);text-decoration:underline;text-underline-offset:2px">MIT Climate Project</a>.</p>
-        <p class="rv d3">I focus on enabling real-time, adaptive environmental monitoring by pushing decision-making to the edge. This allows systems to autonomously adjust their sensing strategies to capture dynamic phenomena and to assist expert decision-making without constant human intervention. My goal is to improve ecological research and conservation at scale.</p>
+        <p class="lede rv d1">I am a <b>systems researcher</b> who designs, builds, and deploys <b>intelligent sensing systems</b> for dynamic, resource-constrained field environments. My technical contributions span edge AI and distributed computing, adaptive autonomy, robotics and sensing hardware, and multimodal data infrastructure.</p>
+        <p class="rv d2">I co-design and deploy these systems with ecologists and environmental scientists to extend expert observation across ecosystems—from wildlife behavior and biodiversity monitoring to <b style="color:var(--moss)">vegetated coastal resilience</b>.</p>
+        <p class="rv d3">I earned my PhD in Computer Science &amp; Engineering at The Ohio State University, advised by Dr. Christopher Stewart and Dr. Tanya Berger-Wolf. I am now a postdoctoral associate in <b style="color:var(--moss)">MIT Civil &amp; Environmental Engineering</b> with Dr. Heidi Nepf, developing sensing systems for coastal resilience through the <a href="https://climateproject.mit.edu/building-coastal-resilience" style="color:var(--moss);text-decoration:underline;text-underline-offset:2px">Climate Project at MIT</a>.</p>
       </div>
     </div>
   </section>
@@ -291,64 +297,64 @@
     <div class="wrap">
       <div class="eyebrow rv">Waypoint 02 / Research interests</div>
       <h2 class="rv d1">Research interests</h2>
-      <p class="rv d1" style="color:var(--mist);opacity:.8;max-width:62ch;margin-top:.9rem">My research builds systems that extend expert observation across dynamic environments, spanning behavior-aware drones to multimodal monitoring of nature-based infrastructure.</p>
+      <p class="rv d1" style="color:var(--mist);opacity:.8;max-width:62ch;margin-top:.9rem">I build field-deployed systems that extend expert observation across dynamic environments: resource-aware autonomy on individual platforms, coordination across heterogeneous sensors, and open infrastructure for evaluating and reusing those systems.</p>
       <p class="rv d1" style="color:var(--hud);font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;margin-top:.4rem">Tap a card to see related papers &amp; projects</p>
       <div class="cards">
-        <div class="flip rv d1" tabindex="0" role="button" aria-label="Adaptive autonomous sensing — show related papers and projects">
+        <div class="flip rv d1" tabindex="0" role="button" aria-label="Resource-aware autonomy at the far edge — show related papers and projects">
           <div class="flip-inner">
             <div class="flip-face flip-front">
               <span class="idx">RI–01</span>
-              <h4>Adaptive autonomous systems</h4>
-              <p class="fdesc">Edge AI and autonomous sensing systems that decide in real time how to observe, adapting sampling and inference under constrained compute and connectivity to capture dynamic phenomena while keeping domain experts on the loop.</p>
-              <div class="flip-cue"><span>edge AI · autonomy · expert-on-the-loop</span><span class="flip-turn">↻</span></div>
+              <h4>Resource-aware autonomy at the far edge</h4>
+              <p class="fdesc">I design runtime systems that close the loop between perception and control on individual sensing platforms. These systems manage inference, navigation, and resource use in real time under constraints in compute, energy, connectivity, and environmental uncertainty.</p>
+              <div class="flip-cue"><span>edge AI · computer vision · adaptive control</span><span class="flip-turn">↻</span></div>
             </div>
             <div class="flip-face flip-back">
-              <span class="idx">RI–01 Systems · Related work</span>
+              <span class="idx">RI–01 · Resource-aware autonomy</span>
               <div class="flip-links">
-                <a class="chip" href="https://arxiv.org/abs/2512.02285" target="_blank" rel="noopener">Edge-Native Drone System · SEC ’25</a>
-                <a class="chip" href="https://doi.org/10.1109/SEC62691.2024.00025" target="_blank" rel="noopener">Modeling Edge Ecology · SEC ’24</a>
-                <a class="chip" href="https://par.nsf.gov/servlets/purl/10530238" target="_blank" rel="noopener">Autonomic Computing · ACSOS ’23</a>
-                <a class="chip" href="https://imageomics.github.io/wildwing/" target="_blank" rel="noopener">Project · WildWing</a>
+                <a class="chip" href="https://arxiv.org/abs/2512.02285" target="_blank" rel="noopener">Edge-Native Drone System</a>
+                <a class="chip" href="https://doi.org/10.1109/SEC62691.2024.00025" target="_blank" rel="noopener">Characterizing AI-Driven Ecology at the Edge</a>
+                <a class="chip" href="https://imageomics.github.io/wildwing/" target="_blank" rel="noopener">WildWing</a>
               </div>
               <div class="flip-cue"><span class="flip-turn">↩</span><span>back</span></div>
             </div>
           </div>
         </div>
-        <div class="flip rv d2" tabindex="0" role="button" aria-label="Multimodal environmental intelligence — show related papers and projects">
+        <div class="flip rv d2" tabindex="0" role="button" aria-label="Coordinated cross-modal sensing — show related papers and projects">
           <div class="flip-inner">
             <div class="flip-face flip-front">
               <span class="idx">RI–02</span>
-              <h4>Multimodal environmental intelligence</h4>
-              <p class="fdesc">Connecting fine-scale field measurements to landscape-scale indicators across sensors, sites, and time.</p>
-              <div class="flip-cue"><span>multimodal · computer vision · sensor fusion</span><span class="flip-turn">↻</span></div>
+              <h4>Coordinated cross-modal sensing</h4>
+              <p class="fdesc">I develop distributed sensing architectures that connect heterogeneous platforms across space, time, and modality. My work uses observations from drones, camera traps, bioacoustics, and other sensors to inform where, when, and how the broader sensing network samples next.</p>
+              <div class="flip-cue"><span>cross-modal sensing · distributed coordination · sensor networks</span><span class="flip-turn">↻</span></div>
             </div>
             <div class="flip-face flip-back">
-              <span class="idx">RI–02 Intelligence· Related work</span>
+              <span class="idx">RI–02 · Cross-modal coordination</span>
               <div class="flip-links">
-                <a class="chip" href="https://doi.org/10.1111/2041-210X.70128" target="_blank" rel="noopener">Collective Behaviour · MEE ’25</a>
-                <a class="chip" href="https://arxiv.org/abs/2504.07744" target="_blank" rel="noopener">MMLA Dataset · CV4Animals ’25</a>
-                <a class="chip" href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener">Project · SmartWilds</a>
-                <a class="chip" href="https://imageomics.github.io/KABR/" target="_blank" rel="noopener">Project · kabr-tools</a>
+                <a class="chip" href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener">SmartWilds</a>
+                <span class="chip">Cross-Modal Coordination at the Far Edge</span>
+                <a class="chip" href="https://2024.acsos.org/details/acsos-2024-papers/7/Decentralized-Multi-Drone-Coordination-for-Wildlife-Video-Acquisition" target="_blank" rel="noopener">Decentralized Multi-Drone Coordination</a>
               </div>
               <div class="flip-cue"><span class="flip-turn">↩</span><span>back</span></div>
             </div>
           </div>
         </div>
-        <div class="flip rv d3" tabindex="0" role="button" aria-label="Open ecological data infrastructure — show related papers and projects">
+        <div class="flip rv d3" tabindex="0" role="button" aria-label="Open infrastructure for field AI — show related papers and projects">
           <div class="flip-inner">
             <div class="flip-face flip-front">
               <span class="idx">RI–03</span>
-              <h4>Open ecological data infrastructure</h4>
-              <p class="fdesc">Reproducible, AI-ready data standards and open-source tools that make heterogeneous field observations findable, interoperable, and reusable, so ecological data can be combined, benchmarked, and built upon.</p>
-              <div class="flip-cue"><span>AI-ready data · open standards · reproducibility</span><span class="flip-turn">↻</span></div>
+              
+              <h4>Open infrastructure for field AI</h4>
+              <p class="fdesc">I develop open data standards, datasets, software, benchmarks, and evaluation infrastructure that make field-deployed AI systems reproducible, interoperable, and reusable across studies and ecosystems.</p>
+              <div class="flip-cue"><span>open infrastructure · AI-ready data · reproducibility</span><span class="flip-turn">↻</span></div>
             </div>
             <div class="flip-face flip-back">
-              <span class="idx">RI–03 Data · Related work</span>
+              <span class="idx">RI–03 · Open infrastructure</span>
               <div class="flip-links">
-                <a class="chip" href="https://imageomics.github.io/fair_drones/" target="_blank" rel="noopener">Project · FAIR² Drones</a>
-                <a class="chip" href="https://imageomics.github.io/mmla/" target="_blank" rel="noopener">Dataset · MMLA</a>
-                <a class="chip" href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener">Dataset · SmartWilds</a>
-                <a class="chip" href="https://imageomics.github.io/KABR/" target="_blank" rel="noopener">Dataset · KABR</a>
+                <a class="chip" href="https://imageomics.github.io/fair_drones/" target="_blank" rel="noopener">FAIR² Drones</a>
+                <a class="chip" href="projects.html#kabr">KABR and MMLA collections</a>
+                <a class="chip" href="https://imageomics.github.io/kabr-tools/" target="_blank" rel="noopener">kabr-tools</a>
+                <a class="chip" href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener">SmartWilds</a>
+                <a class="chip" href="https://huggingface.co/spaces/imageomics/drone-maneuver-demo" target="_blank" rel="noopener">Maneuver-Indexed Testbed</a>
               </div>
               <div class="flip-cue"><span class="flip-turn">↩</span><span>back</span></div>
             </div>
@@ -366,9 +372,27 @@
       <p class="rv d1" style="color:var(--hud);font-family:var(--mono);font-size:.8rem;letter-spacing:.03em"> <a href="https://scholar.google.com/citations?user=bhNDuigAAAAJ&amp;hl=en" style="color:var(--moss)">Full list on Google Scholar →</a></p>
       <div class="pubs rv d1">
         <div class="pub">
+          <span class="yr">2026</span>
+          <div><h4>What the Sheep Can Teach the Shepherd: A Vision for Self-Organizing Drone Swarms Informed by Collective Animal Behavior</h4>
+            <div class="venue"><span class="fmt">Vision Paper</span> IEEE ACSOS 2026 · To appear</div></div>
+          <span class="plinks"></span>
+        </div>
+        <div class="pub">
+          <span class="yr">2026</span>
+          <div><h4>A Maneuver-Indexed Testbed for Context-Aware Adaptive Wildlife Drones</h4>
+            <div class="venue"><span class="fmt">Peer-Reviewed Artifact Paper</span> IEEE ACSOS-C 2026 · To appear</div></div>
+          <span class="plinks"><a href="https://huggingface.co/spaces/imageomics/drone-maneuver-demo" target="_blank" rel="noopener">Demo</a></span>
+        </div>
+        <div class="pub">
+          <span class="yr">2026</span>
+          <div><h4>WildWing: An Open-Source, Autonomous and Affordable UAS for Animal Behaviour Video Monitoring</h4>
+            <div class="venue">Methods in Ecology &amp; Evolution · 2026</div></div>
+          <span class="plinks"><a href="https://doi.org/10.1111/2041-210X.70018" target="_blank" rel="noopener">Paper</a> · <a href="https://imageomics.github.io/wildwing/" target="_blank" rel="noopener">Code</a></span>
+        </div>
+        <div class="pub">
           <span class="yr">2025</span>
           <div><h4>Edge-Native, Behavior-Adaptive Drone System for Wildlife Monitoring</h4>
-            <div class="venue">ACM/IEEE SEC 2025 · <span class="award">SRC First Place Award</span></div></div>
+            <div class="venue">DroneSys @ ACM/IEEE SEC 2025 · <span class="award">SRC First Place Award</span></div></div>
           <span class="plinks"><a href="https://arxiv.org/abs/2512.02285" target="_blank" rel="noopener">Paper</a> · <a href="https://www.canva.com/design/DAG6TPzvERE/ZelEj1sktgbvEDdwSembPA/view" target="_blank" rel="noopener">Poster</a></span>
         </div>
         <div class="pub">
@@ -378,18 +402,6 @@
           <span class="plinks"><a href="https://doi.org/10.1111/2041-210X.70128" target="_blank" rel="noopener">Paper</a> · <a href="https://youtu.be/0DErP4Z5C7Q" target="_blank" rel="noopener">Video</a></span>
         </div>
         <div class="pub">
-          <span class="yr">2024</span>
-          <div><h4>Characterizing and Modeling AI-Driven Animal Ecology Studies at the Edge</h4>
-            <div class="venue">ACM/IEEE Symposium on Edge Computing · SEC 2024</div></div>
-          <span class="plinks"><a href="https://doi.org/10.1109/SEC62691.2024.00025" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/jennamk14/autonomous_drone_simulator" target="_blank" rel="noopener">Code</a> · <a href="https://jennamkline.my.canva.site/public-sec24-talk" target="_blank" rel="noopener">Slides</a></span>
-        </div>
-        <div class="pub">
-          <span class="yr">2025</span>
-          <div><h4>WildWing: Open-source, autonomous, affordable UAS for behaviour monitoring</h4>
-            <div class="venue">Methods in Ecology &amp; Evolution</div></div>
-          <span class="plinks"><a href="https://doi.org/10.1111/2041-210X.70018" target="_blank" rel="noopener">Paper</a> · <a href="https://imageomics.github.io/wildwing/" target="_blank" rel="noopener">Code</a></span>
-        </div>
-        <div class="pub">
           <span class="yr">2025</span>
           <div><h4>MMLA: Multi-Environment, Multi-Species, Low-Altitude Aerial Footage Dataset</h4>
             <div class="venue">CVPR 2025 · CV4Animals Workshop</div></div>
@@ -397,9 +409,9 @@
         </div>
         <div class="pub">
           <span class="yr">2024</span>
-          <div><h4>Decentralized Multi-Drone Coordination for Wildlife Video Acquisition</h4>
-            <div class="venue">IEEE ACSOS 2024</div></div>
-          <span class="plinks"><a href="https://2024.acsos.org/details/acsos-2024-papers/7/Decentralized-Multi-Drone-Coordination-for-Wildlife-Video-Acquisition" target="_blank" rel="noopener">Paper</a></span>
+          <div><h4>Characterizing and Modeling AI-Driven Animal Ecology Studies at the Edge</h4>
+            <div class="venue">ACM/IEEE Symposium on Edge Computing · SEC 2024</div></div>
+          <span class="plinks"><a href="https://doi.org/10.1109/SEC62691.2024.00025" target="_blank" rel="noopener">Paper</a> · <a href="https://github.com/jennamk14/autonomous_drone_simulator" target="_blank" rel="noopener">Code</a> · <a href="https://jennamkline.my.canva.site/public-sec24-talk" target="_blank" rel="noopener">Slides</a></span>
         </div>
         <div class="pub">
           <span class="yr">2023</span>
@@ -414,43 +426,49 @@
   <!-- ============ TALKS ============ -->
   <section class="scene dark alt" data-wp="04" data-label="TALKS">
     <div class="wrap">
-      <div class="eyebrow rv">Waypoint 04 / Invited talks</div>
+      <div class="eyebrow rv">Waypoint 04 / Talks &amp; presentations</div>
       <h2 class="rv d1">Talks &amp; presentations</h2>
       <div class="scrollnote rv d1">↕ Scroll the log</div>
       <div class="newsscroll rv d1">
         <div class="talks">
+          <div class="talk"><h4>Lessons from FAIR² Drones: Toward AI-Ready Multimodal, Multispatial Sensor Data for Ecology</h4>
+            <div class="venue"><span class="fmt">Invited Talk</span> Symposium: Building an AI-Ready Ecology &amp; Biodiversity Data Infrastructure · Ecological Society of America (ESA) · Salt Lake City, UT · July 2026</div></div>
+          <div class="talk"><h4>AI for Ecology: Accelerating Discoveries, Reducing Uncertainties, and Scaling Solutions</h4>
+            <div class="venue"><span class="fmt">Panel</span> Special Session SS23 · Ecological Society of America (ESA) · Salt Lake City, UT · July 2026</div></div>
           <div class="talk"><h4>FAIR² Drones: An AI-Ready Standard for Cross-Domain Wildlife Drone Datasets</h4>
-            <div class="venue">FARR Workshop (FAIR in ML, AI Readiness &amp; Reproducibility) · AGU Conference Center, Washington D.C. · April 2026 · Poster Session</div></div>
+            <div class="venue"><span class="fmt">Poster</span> FARR Workshop (FAIR in ML, AI Readiness &amp; Reproducibility) · AGU Conference Center, Washington D.C. · April 2026</div></div>
           <div class="talk"><h4>Autonomous Drones for Animal Studies with Edge AI</h4>
-            <div class="venue">Global Conservation Tech &amp; Drone Forum (GCTDF) · Nairobi, Kenya · March 2026 · <a href="https://www.gctdf.org/conference-tracks" class="award">[Conference]</a></div></div>
+            <div class="venue"><span class="fmt">Invited Talk</span> Global Conservation Tech &amp; Drone Forum (GCTDF) · Nairobi, Kenya · March 2026 · <a href="https://www.gctdf.org/conference-tracks" target="_blank" rel="noopener" class="award">Conference ↗</a></div></div>
           <div class="talk"><h4>Autonomous AI-Driven Environmental Sensing Systems</h4>
-            <div class="venue">MIT Rising Stars in EECS Workshop · 2025 · <a href="https://www.canva.com/design/DAG3CIlrMTE/DqAfhmRGc1zGdd-KtPrQpA/watch" target="_blank" rel="noopener" class="award">[Poster]</a></div></div>
+            <div class="venue"><span class="fmt">Poster</span> MIT Rising Stars in EECS Workshop · 2025 · <a href="https://www.canva.com/design/DAG3CIlrMTE/DqAfhmRGc1zGdd-KtPrQpA/watch" target="_blank" rel="noopener" class="award">Poster ↗</a></div></div>
           <div class="talk"><h4>How do drones fit into multimodal sensing networks?</h4>
-            <div class="venue">WildDrone Summer School · Max Planck Inst. for Animal Behavior, Konstanz · <a href="https://figshare.com/articles/poster/How_do_drones_fit_into_multimodal_sensing_networks_/30217195?file=58284163" target="_blank" rel="noopener" class="award">[Poster]</a></div></div>
+            <div class="venue"><span class="fmt">Poster</span> WildDrone Summer School · Max Planck Inst. for Animal Behavior, Konstanz · 2025 · <a href="https://figshare.com/articles/poster/How_do_drones_fit_into_multimodal_sensing_networks_/30217195?file=58284163" target="_blank" rel="noopener" class="award">Poster ↗</a></div></div>
+          <div class="talk"><h4>Autonomous, Adaptive Vision-Based Remote Sensing System for Dynamic Field Animal Ecology Studies</h4>
+            <div class="venue"><span class="fmt">Conference Talk</span> Edward F. Hayes Advanced Research Forum · 2025 · <span class="award">First Place, Engineering Oral</span></div></div>
           <div class="talk"><h4>Drones and AI in Field Animal Ecology</h4>
-            <div class="venue">Invited lecture · University of Findlay · <a href="https://www.youtube.com/watch?v=ztL_9dyuXVk&amp;list=PLXoz45DUWHPnJhSeSV4LL_y-V4vrA07lq&amp;index=1&amp;t=1850s" target="_blank" rel="noopener" class="award">[Recording]</a></div></div>
+            <div class="venue"><span class="fmt">Invited Talk</span> University of Findlay · 2025 · <a href="https://www.youtube.com/watch?v=ztL_9dyuXVk&amp;list=PLXoz45DUWHPnJhSeSV4LL_y-V4vrA07lq&amp;index=1&amp;t=1850s" target="_blank" rel="noopener" class="award">Recording ↗</a></div></div>
           <div class="talk"><h4>From Ohio to Kenya: Autonomous Drones in Field Ecology &amp; Conservation</h4>
-            <div class="venue">Conservation Science Symposium · Muskingum University &amp; The Wilds, OH</div></div>
-          <div class="talk"><h4>Individual Identification of Zebras with Autonomous UAV Swarms</h4>
-            <div class="venue">TDAI Fall Forum 2024 · <span class="award">Best Poster Award</span></div></div>
+            <div class="venue"><span class="fmt">Invited Talk</span> Conservation Science Symposium · Muskingum University &amp; The Wilds, OH · 2025</div></div>
           <div class="talk"><h4>Autonomous Drones for Collective Wildlife Behavior</h4>
-            <div class="venue">WildDrone Seminar Series · <a href="https://www.canva.com/design/DAGHR7re88M/-5eS6P0f-m309iU5dcfPAw/view" target="_blank" rel="noopener" class="award">[Slides]</a></div></div>
-          <div class="talk"><h4>PhD Forum: An Adaptive Autonomous Aerial System for Dynamic Field Animal Ecology</h4>
-            <div class="venue">IEEE ACSOS 2024 · <a href="https://www.canva.com/design/DAGQ9PwaJu4/ZXTv-SuIz4OAKo0dVYtRZQ/view" target="_blank" rel="noopener" class="award">[Slides]</a></div></div>
-          <div class="talk"><h4>Adaptive, Autonomous Aerial Systems for Dynamic Field Animal Ecology Studies</h4>
-            <div class="venue">Invited talk · University of Bologna · Cesena, Italy · September 2024</div></div>
-          <div class="talk"><h4>Intelligent Cyberinfrastructure for Remote Sensing with Autonomous Aerial Robotics</h4>
-            <div class="venue">TDAI Interdisciplinary Research Fall Forum 2023 · Columbus, OH</div></div>
-          <div class="talk"><h4>Describing HPC Filesystem Trees with the Grand Unified File-Index</h4>
-            <div class="venue">SC23 · ACM Student Research Competition (Graduate Posters) · Denver, CO · November 2023</div></div>
-          <div class="talk"><h4>Interdisciplinary Applications of Autonomous Unmanned Aerial Vehicles</h4>
-            <div class="venue">STARS Celebration @ Tapia 2023 · &amp; Ohio Celebration of Women in Computing</div></div>
-          <div class="talk"><h4>Autonomous UAV Missions for Studying Wildlife Behavior: A Case Study for the Individual Identification of Zebras</h4>
-            <div class="venue">2023 Midwest Machine Learning Symposium (MMLS) · Chicago, IL · May 2023 · Poster</div></div>
+            <div class="venue"><span class="fmt">Invited Talk</span> WildDrone Seminar Series · 2025 · <a href="https://www.canva.com/design/DAGHR7re88M/-5eS6P0f-m309iU5dcfPAw/view" target="_blank" rel="noopener" class="award">Slides ↗</a></div></div>
           <div class="talk"><h4>Individual Identification of Zebras with Autonomous UAV Swarms</h4>
-            <div class="venue">2023 CRA-WP Grad Cohort for Women · San Francisco, CA · April 2023 · Poster</div></div>
+            <div class="venue"><span class="fmt">Poster</span> TDAI Interdisciplinary Research Fall Forum · 2024 · <span class="award">Best Poster Award</span></div></div>
+          <div class="talk"><h4>PhD Forum: An Adaptive Autonomous Aerial System for Dynamic Field Animal Ecology</h4>
+            <div class="venue"><span class="fmt">PhD Forum</span> IEEE ACSOS 2024 · <a href="https://www.canva.com/design/DAGQ9PwaJu4/ZXTv-SuIz4OAKo0dVYtRZQ/view" target="_blank" rel="noopener" class="award">Slides ↗</a></div></div>
+          <div class="talk"><h4>Adaptive, Autonomous Aerial Systems for Dynamic Field Animal Ecology Studies</h4>
+            <div class="venue"><span class="fmt">Invited Talk</span> University of Bologna · Cesena, Italy · September 2024</div></div>
+          <div class="talk"><h4>Intelligent Cyberinfrastructure for Remote Sensing with Autonomous Aerial Robotics</h4>
+            <div class="venue"><span class="fmt">Poster</span> TDAI Interdisciplinary Research Fall Forum · Columbus, OH · 2023</div></div>
+          <div class="talk"><h4>Describing HPC Filesystem Trees with the Grand Unified File-Index</h4>
+            <div class="venue"><span class="fmt">Poster</span> SC23 · ACM Student Research Competition (Graduate Posters) · Denver, CO · November 2023</div></div>
+          <div class="talk"><h4>Interdisciplinary Applications of Autonomous Unmanned Aerial Vehicles</h4>
+            <div class="venue"><span class="fmt">Conference Talk</span> STARS Celebration @ Tapia · &amp; Ohio Celebration of Women in Computing · 2023</div></div>
+          <div class="talk"><h4>Autonomous UAV Missions for Studying Wildlife Behavior: A Case Study for the Individual Identification of Zebras</h4>
+            <div class="venue"><span class="fmt">Poster</span> Midwest Machine Learning Symposium (MMLS) · Chicago, IL · May 2023</div></div>
+          <div class="talk"><h4>Individual Identification of Zebras with Autonomous UAV Swarms</h4>
+            <div class="venue"><span class="fmt">Poster</span> CRA-WP Grad Cohort for Women · San Francisco, CA · April 2023</div></div>
           <div class="talk"><h4>PhD Forum: Edge Computing for Software-Defined Cartography</h4>
-            <div class="venue">ACM/IEEE Symposium on Edge Computing · SEC 2022 · Seattle, WA</div></div>
+            <div class="venue"><span class="fmt">PhD Forum</span> ACM/IEEE Symposium on Edge Computing · SEC 2022 · Seattle, WA</div></div>
         </div>
       </div>
     </div>
@@ -471,33 +489,33 @@
         </div>
         <div class="card rv d2">
           <span class="idx">PL–02</span>
-          <h4>SmartWilds</h4>
-          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Synchronized multimodal wildlife-monitoring dataset — drones, camera traps, and bioacoustics.</p>
-          <div class="links"><a class="chip" href="projects.html#smartwilds">Details</a><a href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener" class="chip">Website</a></div>
+          <h4>Maneuver-Indexed Testbed</h4>
+          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Interactive evaluation environment for testing context-aware, behavior-adaptive wildlife drone systems across flight maneuvers and ecological conditions.</p>
+          <div class="links"><a class="chip" href="projects.html#maneuver">Details</a><a href="https://huggingface.co/spaces/imageomics/drone-maneuver-demo" target="_blank" rel="noopener" class="chip">Demo</a></div>
         </div>
         <div class="card rv d3">
           <span class="idx">PL–03</span>
-          <h4>KABR &amp; MMLA</h4>
-          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Field-collected drone-video datasets and an open framework for multi-species behavior recognition.</p>
-          <div class="links"><a class="chip" href="projects.html#kabr">Details</a><a href="https://imageomics.github.io/mmla/" target="_blank" rel="noopener" class="chip">MMLA</a></div>
+          <h4>SmartWilds</h4>
+          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Led multimodal wildlife-monitoring project integrating synchronized drone, camera-trap, and bioacoustic observations.</p>
+          <div class="links"><a class="chip" href="projects.html#smartwilds">Details</a><a href="https://huggingface.co/collections/imageomics/smartwilds" target="_blank" rel="noopener" class="chip">Data</a><a href="https://imageomics.github.io/naturelab/" target="_blank" rel="noopener" class="chip">Website</a></div>
         </div>
         <div class="card rv d1">
           <span class="idx">PL–04</span>
+          <h4>KABR &amp; MMLA Collections</h4>
+          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Field-collected drone-video datasets, synchronized telemetry, annotations, trained models, and open workflows for wildlife detection and behavior monitoring.</p>
+          <div class="links"><a class="chip" href="projects.html#kabr">Details</a><a href="https://huggingface.co/collections/imageomics/kabr" target="_blank" rel="noopener" class="chip">KABR</a><a href="https://huggingface.co/collections/imageomics/mmla" target="_blank" rel="noopener" class="chip">MMLA</a></div>
+        </div>
+        <div class="card rv d2">
+          <span class="idx">PL–05</span>
           <h4>FAIR² Drones</h4>
           <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">An AI-ready standard for cross-domain wildlife drone datasets.</p>
           <div class="links"><a class="chip" href="projects.html#fair-drones">Details</a><a href="https://imageomics.github.io/fair_drones/" target="_blank" rel="noopener" class="chip">Website</a></div>
         </div>
-        <div class="card rv d2">
-          <span class="idx">PL–05</span>
+        <div class="card rv d3">
+          <span class="idx">PL–06</span>
           <h4>kabr-tools</h4>
           <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">Open-source framework for automated multi-species behavioral monitoring.</p>
           <div class="links"><a class="chip" href="projects.html#kabr">Details</a><a href="https://github.com/imageomics/KABR" target="_blank" rel="noopener" class="chip">GitHub</a></div>
-        </div>
-        <div class="card rv d3">
-          <span class="idx">PL–06</span>
-          <h4>Research Project Tracker</h4>
-          <p style="font-size:.88rem;color:var(--mist);opacity:.75;margin:0">A lightweight tool for coordinating multi-student, multi-site field research.</p>
-          <div class="links"><a class="chip" href="projects.html#project-management">Details</a><a href="https://github.com/jennamk14/academic_project_tracker" target="_blank" rel="noopener" class="chip">Docs</a></div>
         </div>
       </div>
     </div>
@@ -509,6 +527,12 @@
       <div class="eyebrow">Waypoint 06 / Teaching</div>
       <h2 class="rv">In the classroom</h2>
       <div class="teach">
+        <div class="course rv d1" style="grid-column:1/-1">
+          <span class="code">MENTORSHIP</span>
+          <h4>Research Mentorship</h4>
+          <div class="role">Undergraduate &amp; Graduate Researchers</div>
+          <p>Supervised five undergraduate researchers at Ohio State and two at MIT, including student-led projects published at SEC 2025 and CV4Animals at CVPR 2026. Co-supervised a University of Bologna master's thesis resulting in two ACSOS 2024 publications.</p>
+        </div>
         <div class="course rv d1">
           <span class="code">CSE 3244</span>
           <h4>Data Management in the Cloud</h4>
@@ -533,6 +557,15 @@
       <div class="scrollnote rv d1">↕ Scroll the log &nbsp;·&nbsp; <span style="color:var(--star)">★</span> denotes a prize, award, or honor</div>
       <div class="newsscroll rv d1">
         <div class="timeline">
+          <div class="wp"><span class="date">Jul 2026</span>
+            <h4>Speaking at ESA 2026</h4>
+            <p>Presenting “Lessons from FAIR² Drones: Toward AI-Ready Multimodal, Multispatial Sensor Data for Ecology” in the symposium “Building an AI-Ready Ecology &amp; Biodiversity Data Infrastructure for Science and Action” (Mon, Jul 27), and joining the “AI for Ecology” panel (Tue, Jul 28) at the Ecological Society of America Annual Meeting in Salt Lake City.</p></div>
+          <div class="wp"><span class="date">Jul 2026</span>
+            <h4>Two papers accepted to ACSOS 2026</h4>
+            <p>“What the Sheep Can Teach the Shepherd” presents a vision for self-organizing drone swarms informed by collective animal behavior; “A Maneuver-Indexed Testbed for Context-Aware Adaptive Wildlife Drones” contributes a peer-reviewed research artifact for evaluating behavior-adaptive flight systems.</p></div>
+          <div class="wp"><span class="date">Jul 2026</span>
+            <h4>Five abstracts accepted to TDWG 2026</h4>
+            <p>Contributions span AI-ready data standards, automated FAIR evaluation, multimodal sensing coordination, edge/cloud infrastructure, and modular behavior-monitoring workflows.</p></div>
           <div class="wp"><span class="date">Jul 2026</span>
             <h4>Starting a postdoc at MIT</h4>
             <p>Joining Dr. Heidi Nepf's group in MIT Civil &amp; Environmental Engineering, working on drones and computer vision for coastal monitoring.</p></div>
@@ -601,7 +634,7 @@
         <p class="rv d2" style="color:var(--mist);font-family:var(--mono);font-size:.9rem;margin-top:1.4rem">kline.377 [at] osu.edu</p>
         <div class="social rv d2">
           <a href="https://scholar.google.com/citations?user=bhNDuigAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="chip">Google&nbsp;Scholar</a><a href="https://www.linkedin.com/in/jenna-kline-00937ab2/" target="_blank" rel="noopener" class="chip">LinkedIn</a>
-          <a href="https://dblp.org/pid/362/9413" target="_blank" rel="noopener" class="chip">DBLP</a><a href="https://orcid.org/0009-0006-7301-5774" target="_blank" rel="noopener" class="chip">ORCID</a><a href="https://sites.google.com/view/jennamkline/curriculum-vitae" target="_blank" rel="noopener" class="chip">CV</a>
+          <a href="https://dblp.org/pid/362/9413" target="_blank" rel="noopener" class="chip">DBLP</a><a href="https://orcid.org/0009-0006-7301-5774" target="_blank" rel="noopener" class="chip">ORCID</a><a href="CV/Kline_CV.pdf" target="_blank" rel="noopener" class="chip">CV (PDF)</a>
         </div>
       </div>
       <div class="bsky-card rv d3">

@@ -1,0 +1,12 @@
+# LaTeX build artifacts — keep only .tex, .pdf, .bib (and .md, ignored at repo root)
+*.aux
+*.bcf
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.blg
+*.bbl

@@ -1,0 +1,13 @@
+# ignore DS files and markdowns
+.DS_Store
+*.md
+working_notes/*
+
+# ignore PDF build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.fls
+*.fdb_latexmk
