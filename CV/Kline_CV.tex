@@ -128,7 +128,7 @@
 % #1 = location, #2 = dates, #3 = description
 \newcommand{\fieldentry}[3]{%
   \noindent\begin{tabularx}{\linewidth}{@{}X r@{}}\textbf{#1} & #2\end{tabularx}\par\nobreak\vspace{1pt}%
-  {\noindent #3\par}\vspace{4pt}}
+  {\noindent #3\par}\vspace{2pt}}
 
 %for social icons
 \usepackage{fontawesome5}
@@ -156,8 +156,8 @@
 % \newcommand{\youremail}{jennamkline@gmail.com}
 % \newcommand{\yourweb}{jennamk14.github.io}
 
-\newcommand{\youremail}{\textit{jennamkline@gmail.com}}
-\newcommand{\yourweb}{https://jennamk14.github.io/}
+\newcommand{\youremail}{\href{mailto:jennamk9@mit.edu}{jennamk9@mit.edu}}
+\newcommand{\yourweb}{\href{https://jennamk14.github.io/}{jennamk14.github.io}}
 
 %for header
 \usepackage{fancyhdr}
@@ -180,6 +180,15 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+% First page carries the contact block in the title, so suppress the
+% email/website footer there (keep only the page number).
+\fancypagestyle{firstpage}{%
+  \fancyhf{}%
+  \fancyfoot[R]{Page \thepage \hspace{1pt}  of \pageref{LastPage}}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
 \usepackage{lastpage}
 
 %\lhead{This is my name}
@@ -197,9 +206,10 @@
 %----------------------------------------------------------------------------------------
 %\pagenumbering{arabic}
 \begin{document}
+\thispagestyle{firstpage}% page 1 shows only the page number in the footer
 
 % non-numbered pages
-%\pagestyle{empty} 
+%\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -219,9 +229,11 @@
 %
 \ 
 %
-\href{https://scholar.google.com/citations?user=bhNDuigAAAAJ}{\raisebox{-0.05\height}\faGraduationCap \ Google Scholar} \ $|$ \ 
+\href{https://scholar.google.com/citations?user=bhNDuigAAAAJ}{\raisebox{-0.05\height}\faGraduationCap \ Google Scholar} \ $|$ \
 %
-\href{mailto:jennamkline@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ jennamkline@gmail.com} \ 
+\href{mailto:jennamk9@mit.edu}{\raisebox{-0.05\height}\faEnvelope \ jennamk9@mit.edu} \
+%
+%\href{mailto:jennamkline@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ jennamkline@gmail.com} \
 %
 %
 %\href{https://resume.io/r/m5UqgujdL}{\raisebox{-0.05\height}\faFile \ resume.io}\ 
@@ -253,7 +265,7 @@ Honors in Integrated Business and Engineering (IBE)
 
 I am a computer systems researcher who designs, builds, and deploys intelligent sensing systems for dynamic field environments. My work integrates edge AI and distributed computing, computer vision, adaptive autonomy, robotics and sensor hardware, and multimodal sensing. I develop systems foundations for coordinated, cross-modal sensing networks that adapt what, where, and when they observe at the far edge, with applications spanning wildlife monitoring and coastal resilience.
 
-\section{Academic Experience}
+\section{Research Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Massachusetts Institute of Technology, Postdoctoral Associate} & \hfill Jun 2026 - present \\[1.5pt]
@@ -381,11 +393,10 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 
 \section*{Artifacts: Models, Datasets, and Software}
 \begin{pubs}[resume]
-\item \textbf{J.~Kline} et al. \textit{kabr-tools: Automated Framework for Multi-Species Behavioral Monitoring.} Open-source software for analyzing animal behavior from in situ video
-, 2025--present. \href{https://imageomics.github.io/kabr-tools/}{[Code]}.
+\item \textbf{J.~Kline} et al. \textit{kabr-tools: Automated Framework for Multi-Species Behavioral Monitoring.} Open-source software for analyzing animal behavior from in situ video, 2025--present. \href{https://imageomics.github.io/kabr-tools/}{[Code]}.
 \item \textbf{J.~Kline}. \textit{A Maneuver-Indexed Evaluation Framework for Context-Aware Adaptive Wildlife Drones.} Interactive research demo, Hugging Face Spaces, 2026. Companion artifact for the ACSOS-C 2026 paper. \href{https://huggingface.co/spaces/imageomics/drone-maneuver-demo}{[Demo]}.
 \item \textbf{J.~Kline} et al. \textit{WildWing: Open-Source Autonomous UAS for Animal Behaviour Monitoring.} Open-source hardware and software system. \href{https://imageomics.github.io/wildwing/}{[Code]}.\label{art:wildwing}
-\item \textbf{KABR: In Situ Kenyan Animal Behavior Recognition Data and Model Collection.} Imageomics, Hugging Face, 2024--present. Drone videos, behavior annotations, synchronized telemetry, worked examples, and trained behavior-recognition models. \textit{Role:} data collection, annotation, analysis, telemetry integration, and public release. \href{https://huggingface.co/collections/imageomics/kabr}{[Collection]}.\label{art:kabr}
+\item \textbf{KABR: In Situ Kenyan Animal Behavior Recognition Data and Model Collection.} Imageomics, Hugging Face, 2024--present. Drone videos, behavior annotations, synchronized telemetry, worked examples, and models. \textit{Role:} data collection, annotation, analysis, telemetry integration, and public release. \href{https://huggingface.co/collections/imageomics/kabr}{[Collection]}.\label{art:kabr}
 \item \textbf{MMLA: Multi-Environment, Multi-Species, Low-Altitude Aerial Data and Model Collection.} Imageomics, Hugging Face, 2025--present. Multi-site detection datasets, pose annotations, deployment data, and trained detection and pose models. \textit{Role:} data collection, annotation, analysis, curation, and public release. \href{https://huggingface.co/collections/imageomics/mmla}{[Collection]}.\label{art:mmla}
 \item \textbf{SmartWilds: Multimodal Wildlife Monitoring Data Collection.} Imageomics, Hugging Face, 2025--present. Camera-trap, bioacoustic, and drone monitoring resources collected at The Wilds. \textit{Role:} project lead; led study design, field data collection, annotation, analysis, multimodal coordination, and public release. \href{https://huggingface.co/collections/imageomics/smartwilds}{[Collection]}.\label{art:smartwilds}
 \end{pubs}
@@ -401,8 +412,9 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 \textbf{Workshop Organizer}: Imageomics \href{https://imageomics.osu.edu/news/2023/08/image-datapalooza-recap}{Image Datapalooza} Hackathon & 2023 \\
 \textbf{Volunteer}: \href{https://acmwosu.github.io/codeio.html}{Code I/O coding camp} & 2023 \\
 \textbf{Peer Mentor}: \href{https://engineering.osu.edu/graduate/peer-mentors}{GUIDE Program} & 2022--2024 \\
-\end{tabularx}\par\vspace{2pt}
-\noindent\textbf{Journal Reviewer}: Ecological Informatics, Scientific Reports, International Journal of Computer Vision, Ecological Modelling, Methods in Ecology and Evolution, Ecology and Evolution, IET Computer Vision, PLOS One
+\end{tabularx}
+\\
+\textbf{Journal Reviewer}: Ecological Informatics, Scientific Reports, International Journal of Computer Vision (IJCV), Ecological Modelling, Methods in Ecology and Evolution, Ecology and Evolution, IET Computer Vision, PLOS One, Marine Mammal Science, Global Ecology and Conservation, MethodsX
 }
 
 \section{Grants and Awards}
@@ -427,12 +439,12 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 }
 \section*{Field Experience}{\small\setlength{\parskip}{0pt}
 {\small
-\fieldentry{Waquoit Bay National Estuarine Research Reserve, Massachusetts}{Summer 2026} {Team lead and drone pilot. Conducted drone fieldwork monitoring salt-marsh habitats with computer vision, supervising a team of undergraduate researchers.}
-\fieldentry{Ol Pejeta Conservancy, Kenya}{Winter 2026}{ Drone pilot. Tested behavior-adaptive drone system for wildlife monitoring~[\ref{pub:behavior-adaptive}].}
-\fieldentry{The Wilds, Ohio}{Summer 2025}{Team lead. Collected the SmartWilds multimodal dataset --- camera-trap, bioacoustic, and drone data~[\ref{pub:smartwilds},~\ref{art:smartwilds}].}
-\fieldentry{Ol Pejeta Conservancy, Kenya}{Winter 2025}{ Drone pilot. Tested the WildWing system~[\ref{pub:wildwing},~\ref{art:wildwing}] and collected the MMLA dataset~[\ref{pub:mmla},~\ref{art:mmla}].}
-\fieldentry{The Wilds, Ohio}{Summer-Fall 2024}{ Lead drone pilot. Tested the WildWing system~[\ref{pub:wildwing},~\ref{art:wildwing}] and collected the MMLA dataset~[\ref{pub:mmla},~\ref{art:mmla}]}
-\fieldentry{Mpala Research Centre, Kenya}{Winter 2023}{Lead drone pilot. Collected the KABR dataset for in situ animal behavior recognition~[\ref{pub:kabr},~\ref{art:kabr}].}
+\fieldentry{Waquoit Bay National Estuarine Research Reserve, Massachusetts}{Summer 2026}{Team lead and drone pilot. Conducted drone fieldwork monitoring salt-marsh habitats with computer vision, supervising a team of undergraduate researchers. Coastal monitoring project with Dr.~Heidi Nepf.}
+\fieldentry{Ol Pejeta Conservancy, Kenya}{Winter 2026}{Drone pilot. Tested behavior-adaptive drone system for wildlife monitoring~[\ref{pub:behavior-adaptive}]. Funded by the Ohio State University Graduate School's Alumni Grants for Graduate Research and Scholarship (AGGRS).}
+\fieldentry{The Wilds, Ohio}{Summer 2025}{Team lead. Collected the SmartWilds multimodal dataset --- camera-trap, bioacoustic, and drone data~[\ref{pub:smartwilds}].}
+\fieldentry{Ol Pejeta Conservancy, Kenya}{Winter 2025}{Drone pilot. Tested the WildWing system~[\ref{pub:wildwing}] and collected the MMLA dataset~[\ref{pub:mmla}].}
+\fieldentry{The Wilds, Ohio}{Summer-Fall 2024}{Lead drone pilot. Tested the WildWing system~[\ref{pub:wildwing}] and collected the MMLA dataset~[\ref{pub:mmla}].}
+\fieldentry{Mpala Research Centre, Kenya}{Winter 2023}{Lead drone pilot. Collected the KABR dataset for in situ animal behavior recognition~[\ref{pub:kabr}].}
 }}
 \section{Student Supervision and Teaching Experience}
 
@@ -457,7 +469,7 @@ All courses taught at The Ohio State University, Department of Computer Science 
 \par}
 }
 
-\vspace{1em}
+\vspace{2pt}
 \center{\footnotesize Last updated: \today}
 
 \end{document}
