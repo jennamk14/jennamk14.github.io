@@ -26,12 +26,12 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,10pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 % Adding packages for skills
 % -------------------------
 \usepackage{geometry}
-\geometry{margin=0.8in}
+\geometry{margin=0.75in}
 
 \usepackage{array}
 \usepackage[svgnames]{xcolor}
@@ -67,7 +67,8 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
+\setlength{\parskip}{3.5pt plus 1pt}   % tighter inter-paragraph spacing than parskip default
 
 %other packages for formatting
 \RequirePackage{color}
@@ -96,7 +97,7 @@
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\normalsize\scshape\raggedright}{}{0em}{}[\titlerule]
 %\titleformat{\section}{\textbf{}\normalsize\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{7pt}{5pt}
 
 %for publications
 
@@ -105,7 +106,8 @@
 \colorlet{color1}{customcolor}
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=customcolor,linkcolor=customcolor}
+\definecolor{darknavy}{HTML}{1F3864}   % dark navy for hyperlinks (prints legibly)
+\hypersetup{colorlinks,breaklinks,urlcolor=darknavy,linkcolor=darknavy,citecolor=darknavy}
 \usepackage{xurl}   % allow long DOIs/URLs to wrap across lines
 \urlstyle{same}     % use the body font for wrapped identifiers, not typewriter
 \hypersetup{pdftitle={Jenna M. Kline --- Curriculum Vitae}, pdfauthor={Jenna M. Kline}}
@@ -115,10 +117,10 @@
 \providecommand{\homepagesymbol}{\faGlobe~}
 % Compact small-caps subsection headers for publication categories
 \titleformat{\subsection}{\normalsize\bfseries\raggedright}{}{0em}{}
-\titlespacing{\subsection}{0pt}{9pt}{3pt}
+\titlespacing{\subsection}{0pt}{5pt}{2pt}
 % Hanging-indent, unnumbered list for references
 \newlist{pubs}{enumerate}{1}
-\setlist[pubs]{leftmargin=1.7em, labelindent=0pt, labelwidth=1.3em, labelsep=0.4em, align=left, label=\arabic*., ref=\arabic*, itemsep=0.5em, topsep=0.25em, parsep=0pt}
+\setlist[pubs]{leftmargin=1.7em, labelindent=0pt, labelwidth=1.3em, labelsep=0.4em, align=left, label=\arabic*., ref=\arabic*, itemsep=0.3em, topsep=0.12em, parsep=0pt}
 % Year sub-heading within a category
 \newcommand{\pubyear}[1]{\smallskip\noindent\textbf{#1}\par\nobreak\vspace{0.15em}}
 % Clickable identifiers
@@ -244,6 +246,7 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
+\vspace{-10pt}   % shrink whitespace between contact info and Education
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}X r@{}}
 \textbf{PhD Computer Science \& Engineering}, \textbf{The Ohio State University} & 2021-2026 \\[1.5pt]
@@ -307,14 +310,14 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 }
 \end{tabularx}
 
-\section*{Field Experience}{\small\setlength{\parskip}{0pt}
+\section*{Field Experience}{\small\setlength{\parskip}{1pt}
 {\small
 \fieldentry{Waquoit Bay National Estuarine Research Reserve, Massachusetts}{Summer 2026}{Team lead and drone pilot. Conducted drone fieldwork monitoring salt-marsh habitats with computer vision, supervising a team of undergraduate researchers. Coastal monitoring project at MIT with Dr.~Heidi Nepf.}
-\fieldentry{Ol Pejeta Conservancy, Kenya}{Winter 2026}{Drone pilot. Tested behavior-adaptive drone system for wildlife monitoring~[\ref{pub:behavior-adaptive}]. Funded by the Ohio State University Graduate School's Alumni Grants for Graduate Research and Scholarship (AGGRS).}
+\fieldentry{Ol Pejeta Conservancy, Kenya}{Feb-Mar 2026}{Drone pilot. Tested behavior-adaptive drone system for wildlife monitoring~[\ref{pub:behavior-adaptive}]. Funded by the Ohio State University Graduate School's Alumni Grants for Graduate Research and Scholarship (AGGRS).}
 \fieldentry{The Wilds Conservation Center, Ohio}{Summer 2025}{Team lead. Collected the SmartWilds multimodal dataset --- camera-trap, bioacoustic, and drone data~[\ref{pub:smartwilds}].}
-\fieldentry{Ol Pejeta Conservancy, Kenya}{Winter 2025}{Drone pilot. Tested the WildWing system~[\ref{pub:wildwing}] and collected the MMLA dataset~[\ref{pub:mmla}].}
+\fieldentry{Ol Pejeta Conservancy, Kenya}{Jan 2025}{Drone pilot. Tested the WildWing system~[\ref{pub:wildwing}] and collected the MMLA dataset~[\ref{pub:mmla}].}
 \fieldentry{The Wilds Conservation Center, Ohio}{Summer-Fall 2024}{Lead drone pilot. Tested the WildWing system~[\ref{pub:wildwing}] and collected the MMLA dataset~[\ref{pub:mmla}].}
-\fieldentry{Mpala Research Centre, Kenya}{Winter 2023}{Lead drone pilot. Collected the KABR dataset for in situ animal behavior recognition~[\ref{pub:kabr}].}
+\fieldentry{Mpala Research Centre, Kenya}{Jan 2023}{Lead drone pilot. Collected the KABR dataset for in situ animal behavior recognition~[\ref{pub:kabr}].}
 }}
 
 
@@ -328,7 +331,7 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 \item \textbf{J.~Kline}, S.~Afridi, E.~G.~A.~Rolland, G.~Maalouf, L.~Laporte-Devylder, et al. ``Studying Collective Animal Behaviour with Drones and Computer Vision.'' \textit{Methods in Ecology and Evolution} 16.10 (2025), pp.~2229--2259. \textbf{2025 Robert May Prize}. \doilink{10.1111/2041-210X.70128}.\label{pub:collective-behaviour}
 \item \textbf{J.~Kline}, R.~Katole, T.~Berger-Wolf, and C.~Stewart. ``Edge-Native, Behavior-Adaptive Drone System for Wildlife Monitoring.'' In: \textit{DroneSys: Workshop on Autonomous Drone Computing Systems and Applications at the ACM/IEEE Symposium on Edge Computing (SEC)}. 2025. Associated work received \textbf{First Place in the SEC 2025 Student Research Competition}. \doilink{10.1145/3769102.3774245}.\label{pub:behavior-adaptive}
 \item \textbf{J.~Kline}, A.~Zhong, K.~Irizarry, C.~V.~Stewart, C.~Stewart, et al. ``WildWing: An Open-Source, Autonomous and Affordable UAS for Animal Behaviour Video Monitoring.'' \textit{Methods in Ecology and Evolution} 17.2 (2025), pp.~291--300. \doilink{10.1111/2041-210X.70018}.\label{pub:wildwing}
-\item \textbf{J.~Kline}, A.~O'Quinn, T.~Berger-Wolf, and C.~Stewart. ``Characterizing and Modeling AI-Driven Animal Ecology Studies at the Edge.'' In: \textit{2024 IEEE/ACM Symposium on Edge Computing (SEC)}. 2024, pp.~220--233. \doilink{10.1109/SEC62691.2024.00025}.
+\item \textbf{J.~Kline}, A.~O'Quinn, T.~Berger-Wolf, and C.~Stewart. ``Characterizing and Modeling AI-Driven Animal Ecology Studies at the Edge.'' In: \textit{2024 ACM/IEEE Symposium on Edge Computing (SEC)}. 2024, pp.~220--233. \doilink{10.1109/SEC62691.2024.00025}.
 \item \textbf{J.~Kline}, C.~Stewart, T.~Berger-Wolf, M.~Ramirez, S.~Stevens, et al. ``A Framework for Autonomic Computing for In Situ Imageomics.'' In: \textit{2023 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS)}. 2023, pp.~11--16. \doilink{10.1109/ACSOS58161.2023.00018}.
 \end{pubs}
 
@@ -381,6 +384,7 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 \item \textbf{J.~Kline} et al. ``kabr-tools: A Modular Workflow for Automated Video-Based Behavioral Monitoring Across the Autonomy Spectrum.'' Accepted abstract, TDWG, Oslo, Norway, September 2026.
 \item \textbf{J.~Kline}. ``Lessons from FAIR\textsuperscript{2} Drones: Toward AI-Ready Multimodal, Multispatial Sensor Data for Ecology.'' Invited symposium talk, ``Building an AI-Ready Ecology and Biodiversity Data Infrastructure for Science and Action,'' Ecological Society of America (ESA) Annual Meeting, Salt Lake City, UT, July 2026. Scheduled.
 \item \textbf{J.~Kline}. Panelist, ``AI for Ecology: Accelerating Discoveries, Reducing Uncertainties, and Scaling Solutions.'' Special Session SS23, Ecological Society of America (ESA) Annual Meeting, Salt Lake City, UT, July 2026. Scheduled.
+\\
 \item \textbf{J.~Kline}. ``Autonomous Drones for Animal Studies with Edge AI.'' Invited talk, Global Conservation Tech \& Drone Forum, Nairobi, Kenya, 2026.
 \item \textbf{J.~Kline} et al. ``FAIR\textsuperscript{2} Drones: An AI-Ready Standard for Cross-Domain Wildlife Drone Datasets.'' Poster presentation, FARR Workshop: FAIR in ML, AI Readiness and Reproducibility, Washington, DC, 2026.
 \item \textbf{J.~Kline}, R.~Katole, and C.~Stewart. ``An Edge-Native Approach to Behavior-Adaptive Navigation in Drone Systems.'' In: \textit{Proceedings of the Tenth ACM/IEEE Symposium on Edge Computing (SEC)}. 2025, pp.~1--3. \textbf{SEC 2025 Student Research Competition --- First Place}. \doilink{10.1145/3769102.377437}.  \textit{[Extended abstract; presented as poster]}\label{pub:src-navigation}
@@ -407,7 +411,7 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 \item \textbf{J.~Kline} et al. \textit{WildWing: Open-Source Autonomous UAS for Animal Behaviour Monitoring.} Open-source hardware and software system. 2026. \href{https://imageomics.github.io/wildwing/}{[Code]}.\label{art:wildwing}
 \item \textbf{KABR: In Situ Kenyan Animal Behavior Recognition Data and Model Collection.} Imageomics, Hugging Face, 2023--2026. Drone videos, behavior annotations, synchronized telemetry, worked examples, and models. \textit{Role:} data collection, annotation, analysis, telemetry integration, and public release. \href{https://huggingface.co/collections/imageomics/kabr}{[Collection]}.\label{art:kabr}
 \item \textbf{MMLA: Multi-Environment, Multi-Species, Low-Altitude Aerial Data and Model Collection.} Imageomics, Hugging Face, 2025--2026. Multi-site detection datasets, pose annotations, deployment data, and trained detection and pose models. \textit{Role:} data collection, annotation, analysis, curation, and public release. \href{https://huggingface.co/collections/imageomics/mmla}{[Collection]}.\label{art:mmla}
-\item \textbf{SmartWilds: Multimodal Wildlife Monitoring Data Collection.} Imageomics, Hugging Face, 2025--present. Camera-trap, bioacoustic, and drone monitoring resources collected at The Wilds Conservation Center. \textit{Role:} project lead; led study design, field data collection, annotation, analysis, multimodal coordination, and public release. \href{https://huggingface.co/collections/imageomics/smartwilds}{[Collection]}.\label{art:smartwilds}
+\item \textbf{SmartWilds: Multimodal Wildlife Monitoring Data Collection.} Imageomics, Hugging Face, 2025--present. Camera-trap, bioacoustic, and drone data collected at The Wilds Conservation Center. \textit{Role:} project lead; led study design, field data collection, annotation, analysis, multimodal coordination, and public release. \href{https://huggingface.co/collections/imageomics/smartwilds}{[Collection]}.\label{art:smartwilds}
 \end{pubs}
 }
 
@@ -418,7 +422,7 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 \begin{tabularx}{\linewidth}{@{}X r@{}}
 \textbf{Presidential Fellow}: The Ohio State University \href{https://gradsch.osu.edu/news/2025/11/24/2025-26-presidential-fellowship-recipients}{Presidential Fellowship} & 2025--2026 \\
 \textbf{Robert May Prize}: \href{https://methodsblog.com/2026/03/18/jenna-kline-studying-collective-animal-behaviour-with-drones-and-computer-vision/}{Best early-career-author paper}, British Ecological Society~[\ref{pub:collective-behaviour}] & 2025 \\
-\textbf{Student Research Competition - First Place}: IEEE/ACM Symposium on Edge Computing~[\ref{pub:src-navigation}] & 2025 \\
+\textbf{Student Research Competition - First Place}: ACM/IEEE Symposium on Edge Computing~[\ref{pub:src-navigation}] & 2025 \\
 \textbf{Departmental Research Award}: Outstanding Graduate Research in CSE, OSU & 2025 \\
 \textbf{Hayes Forum - First Place}: Hayes Advanced Research Forum, OSU~[\ref{pres:hayes}] & 2025 \\
 \textbf{Rising Stars in EECS}: \href{https://risingstars-eecs.mit.edu/}{MIT \& Boston University Rising Stars Workshop} & 2025 \\
@@ -437,7 +441,7 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 \smallskip\noindent{\small\bfseries\scshape Student Supervision}\par\nobreak\vspace{2pt}
 {\leftskip=1.5em
 {\small
-\textbf{Massachusetts Institute of Technology} (2026--present). Supervised two summer undergraduate researchers (UROP) on a salt-marsh monitoring study using drones and computer vision.
+\textbf{Massachusetts Institute of Technology} (2026--present). Supervised two summer undergraduate researchers on a salt-marsh monitoring study using drones and computer vision.
 
 \textbf{The Ohio State University} (2022--2026). Supervised five undergraduate researchers, including a team conducting fieldwork at The Wilds Conservation Center, and led a field-campaign team of undergraduate, master's, and PhD students. Student-led projects were published at CV4Animals at CVPR 2026~[\ref{pub:xmodal-corrob},~\ref{pub:uav-reid}] and SEC 2025~[\ref{pub:vigilance}].
 
@@ -473,7 +477,7 @@ Computing, Networking, Storage, and Analysis (SC23) ACM Student Research Competi
 \textbf{Journal Reviewer}: Ecological Informatics, Scientific Reports, International Journal of Computer Vision (IJCV), Ecological Modelling, Methods in Ecology and Evolution, Ecology and Evolution, IET Computer Vision, PLOS One, Marine Mammal Science, Global Ecology and Conservation, MethodsX
 }
 
-\vspace{2pt}
+\vspace{12pt}
 \center{\footnotesize Last updated: \today}
 
 \end{document}
