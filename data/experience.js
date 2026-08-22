@@ -10,7 +10,7 @@ const FIELDWORK = [
     place: "Massachusetts",
     date: "Summer 2026",
     role: "Team lead and drone pilot",
-    body: "Conducted drone fieldwork monitoring salt-marsh habitats with computer vision, supervising a team of undergraduate researchers. Part of the <a href=\"projects.html#coastal\">coastal and salt-marsh monitoring</a> project with Dr. Heidi Nepf, through MIT's Climate Project."
+    body: "Conducted drone fieldwork monitoring salt-marsh habitats with computer vision, supervising a team of undergraduate researchers. Part of the <a href=\"projects.html#coastal\">coastal resilience</a> project with Dr. Heidi Nepf, through MIT's Climate Project."
   },
   {
     site: "Ol Pejeta Conservancy",

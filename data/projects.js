@@ -108,7 +108,7 @@ const PROJECTS = [
     page: "projects",
     name: "Coastal and Salt-Marsh Monitoring",
     tagline: "Drones and computer vision for coastal resilience",
-    blurb: "Developing drone-based sensing and computer vision for coastal and salt-marsh environments as part of ongoing postdoctoral work in MIT Civil &amp; Environmental Engineering.",
+    blurb: "Developing drone-based sensing and computer vision for coastal resilience as part of ongoing postdoctoral work in MIT Civil &amp; Environmental Engineering.",
     thrust: 2,
     tags: ["adaptive-autonomy"],
     image: "media/coastal-waquoit.webp",
