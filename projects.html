@@ -1,359 +1,177 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Projects - Jenna M. Kline</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-		<!-- GoatCounter analytics -->
-		<script data-goatcounter="https://jennamk14.goatcounter.com/count"
-		        async src="//gc.zgo.at/count.js"></script>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects & Experience — Jenna M. Kline</title>
+<meta name="description" content="Projects, field experience, mentorship, teaching, talks, awards, and service — Jenna M. Kline.">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="preload" href="assets/fonts/plexsans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/selfie.jpg" alt="" /></span>
-					<h1 id="logo"><a href="index.html">Jenna M. Kline</a></h1>
-					<p style="color: #ffffff;">Edge AI-Driven Autonomous Environmental Sensing</p>
-				</header>
+<body data-research-base="index.html">
 
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html#one">About</a></li>
-						<li><a href="projects.html" class="active">Projects</a></li>
-						<li><a href="index.html#two">Publications</a></li>
-						<li><a href="index.html#three">Talks</a></li>
-						<li><a href="index.html#four">Teaching</a></li>
-						<li><a href="index.html#five">News</a></li>
-						<li><a href="index.html#six">CV</a></li>
-						<li><a href="index.html#seven">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-				<a href="https://scholar.google.com/citations?user=bhNDuigAAAAJ&hl=en" target="_blank" class="icon"><i class="fa-brands fa-google-scholar fa-2x"></i></a>
-				<a href="https://www.linkedin.com/in/jenna-kline-00937ab2/" target="_blank" class="icon"><i class="fab fa-linkedin fa-2x"></i></a>
-				<a href="https://sites.google.com/view/jennamkline/about" target="_blank" class="icon"><i class="fab fa-blogger fa-2x"></i></a>
-				<a href="https://bsky.app/profile/jennakline.bsky.social" target="_blank" class="icon"><i class="fa-brands fa-bluesky fa-2x"></i></a>
-				</footer>
-			</section>
+<a class="skip" href="#main">Skip to content</a>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<header class="nav">
+  <nav class="wrap nav__inner" aria-label="Primary">
+    <a class="nav__name" href="index.html">Jenna M. Kline</a>
+    <div class="nav__links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#research">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="index.html#awards">Awards</a>
+      <a href="news.html">News</a>
+      <a href="projects.html" aria-current="page">Projects &amp; Experience</a>
+      <a href="CV/Kline_CV.pdf">CV</a>
+    </div>
+  </nav>
+</header>
 
-				<!-- Main -->
-					<div id="main">
+<main id="main">
+  <section class="band band--first">
+    <div class="wrap">
+      <div class="shead">
+        <span class="shead__eyebrow">Projects</span>
+        <h2>Ongoing projects</h2>
+        <p class="shead__sub">Active research projects and community engagement. 
+          Datasets, standards, and software can be found on the
+          <a href="datasets.html">datasets &amp; tools</a> page.</p>
+      </div>
+      <div class="projects" id="projects-main"></div>
 
-						<!-- Header -->
-						<section id="projects-header">
-							<div class="container">
-								<header class="major">
-									<h2>Projects</h2>
-									<p>Tools and frameworks for wildlife monitoring, conservation technology, and edge AI systems.</p>
-								</header>
-							</div>
-						</section>
+      <div class="story story--slim" style="margin-top:clamp(2.5rem,5vw,3.5rem)">
+        <div>
+          <span class="story__eyebrow">Datasets &amp; tools</span>
+          <h2>Open datasets, standards, and software</h2>
+          <p>WildWing, KABR and kabr-tools, MMLA, SmartWilds, FAIR&sup2; Drones, and
+            their associated data, models, and code.</p>
+          <div class="linkrow"><a href="datasets.html">Browse datasets &amp; tools</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<!-- Project Management Tool -->
-						<section id="project-management">
-							<div class="container">
-								<h4 style="margin-bottom: 1em;">Academic Project Tracker</h4>
-								<article style="display: flex; gap: 2em; align-items: flex-start; flex-wrap: wrap;">
-									<div style="flex: 1; min-width: 300px;">
-										<p>I built this project management tool after growing tired of tracking projects across Google Docs, Trello, and other fragmented tools. Notes, tasks, and priorities were scattered across platforms, often requiring subscriptions to unlock basic features. Drawing on my background in systems engineering and product management, I designed a lightweight workflow that centralizes planning, tracks progress, and supports the competing demands of academic research.</p>
-									</div>
-									<div style="flex: 0 0 300px; min-width: 250px;">
-										<a href="https://jennamk14.github.io/academic_project_tracker/">
-											<img src="images/projects-overview.png" alt="project-management-tool" style="width: 100%; height: auto;" />
-										</a>
-										<p style="margin-top: 1.5em;">
-											<a href="https://jennamk14.github.io/academic_project_tracker/" class="button small">View Tool</a>
-										</p>
-									</div>
-								</article>
-							</div>
-						</section>
+  <section class="band band--sunk" id="field">
+    <div class="wrap">
+      <div class="shead">
+        <span class="shead__eyebrow">Field experience</span>
+        <h2>In the field</h2>
+        <p class="shead__sub">Field work and data collection across terrestrial and coastal ecosystems.</p>
+      </div>
+      <div class="entries" id="fieldwork"></div>
+    </div>
+  </section>
 
-						<!-- Edge Computing Group -->
-						<section id="edge-computing">
-							<div class="container">
-								<h4 style="margin-bottom: 1em;">WildLabs Edge Computing Group</h4>
+  <section class="band" id="mentorship">
+    <div class="wrap">
+      <div class="shead">
+        <span class="shead__eyebrow">Mentorship</span>
+        <h2>Student supervision</h2>
+      </div>
+      <div class="entries" id="mentoring"></div>
 
-								
+      <div class="shead" style="margin-top:clamp(2.5rem,5vw,3.5rem)">
+        <span class="shead__eyebrow">Teaching</span>
+        <h2>Courses taught</h2>
+        <p class="shead__sub">The Ohio State University, Department of Computer
+          Science and Engineering.</p>
+      </div>
+      <div class="entries" id="teaching"></div>
+    </div>
+  </section>
 
-								<article style="display: flex; gap: 2em; align-items: flex-start; flex-wrap: wrap;">
-									<div style="flex: 1; min-width: 300px;">
-										<h5 style="margin-top: 0; font-size: 1.1em;">Co-lead, 2025–2026 Group Leadership Programme</h5>
-											<p>This group unites those working at the intersection of edge AI and conservation,
-												focusing on real-time, on-device data processing for environmental monitoring.
-												We facilitate sharing of tools, models, and strategies to overcome challenges in
-												remote, low-connectivity areas.</p>
+  <section class="band band--sunk" id="talks">
+    <div class="wrap">
+      <div class="shead">
+        <span class="shead__eyebrow">Talks</span>
+        <h2>Talks &amp; presentations</h2>
+        <p class="shead__sub">Invited talks, panels, conference presentations, and
+          posters.</p>
+      </div>
+      <div class="scrollpanel" id="talks-all" tabindex="0" role="region"
+           aria-label="Talks and presentations, scrollable list"></div>
+      <p class="scrollpanel__count" id="talks-count"></p>
+    </div>
+  </section>
 
-										<p><strong>Key Features:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Community-driven knowledge sharing</li>
-											<li>Curated resources for edge AI in conservation</li>
-											<li>Collaborative problem-solving for remote deployments</li>
-											<li>Best practices for low-power, low-connectivity scenarios</li>
-										</ul>
-									</div>
-									<div style="flex: 0 0 300px; min-width: 250px;">
-										<a href="https://wildlabs.net/groups/edge-computing">
-											<img src="images/edgeconservationgroup.png" alt="edge-conservation" style="width: 100%; height: auto;" />
-										</a>
-										<p style="margin-top: 1.5em; display: flex; flex-wrap: wrap; gap: 0.5em;">
-											<a href="https://wildlabs.net/groups/edge-computing" class="button small">Join the Group</a>
-											<a href="https://jennamk14.github.io/edge_ai_conservation/" class="button small">View Resource Library</a>
-										</p>
-									</div>
-								</article>
-							</div>
-						</section>
+  <section class="band" id="recognition">
+    <div class="wrap">
+      <div class="shead">
+        <span class="shead__eyebrow">Recognition</span>
+        <h2>Awards &amp; honors</h2>
+      </div>
+      <ul class="records" id="awards-full"></ul>
+    </div>
+  </section>
 
-						<!-- WildWing -->
-						<section id="wildwing">
-							<div class="container">
-								<h3 style="margin-bottom: 1em;">WildWing: Autonomous Aerial System for Animal Behaviour Monitoring</h3>
-								<article style="display: flex; gap: 2em; align-items: flex-start; flex-wrap: wrap;">
-									<div style="flex: 1; min-width: 300px;">
-										<h4 style="margin-top: 0; font-size: 1.1em;">Open-Source, Autonomous, and Affordable UAS</h4>
-										<p>WildWing is an open-source, autonomous, and affordable unmanned aerial system (UAS)
-											for collecting animal behaviour video in the field. It translates expert flight behaviour
-											into autonomous navigation, letting researchers capture usable, ecologically valid
-											observations of free-ranging animals without piloting every mission by hand.</p>
+  <section class="band band--sunk" id="service-section">
+    <div class="wrap">
+      <div class="shead">
+        <span class="shead__eyebrow">Service</span>
+        <h2>Community building and leadership</h2>
+      </div>
+      <ul class="records" id="service-full"></ul>
+      <p class="records__note">Highlighted entries indicate leadership roles or
+        particularly impactful service contributions.</p>
+    </div>
+  </section>
+</main>
 
-										<p><strong>Key Features:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Autonomous, waypoint-driven flight for behaviour monitoring</li>
-											<li>Affordable, off-the-shelf hardware</li>
-											<li>Fully open-source software and documentation</li>
-											<li>Designed for low-impact observation of wildlife</li>
-										</ul>
-									</div>
-									<div style="flex: 0 0 300px; min-width: 250px;">
-										<a href="https://imageomics.github.io/wildwing/">
-											<img src="images/wildwing.jpg" alt="wildwing" style="width: 100%; height: auto;" />
-										</a>
-										<p style="margin-top: 1.5em; display: flex; flex-wrap: wrap; gap: 0.5em;">
-											<a href="https://doi.org/10.1111/2041-210X.70018" class="button small">Read Paper</a>
-											<a href="https://imageomics.github.io/wildwing/" class="button small">Project Website</a>
-										</p>
-									</div>
-								</article>
-							</div>
-						</section>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <h2>Get in touch</h2>
+        <p class="foot__mail"><span class="mail" data-u="jennamk9" data-d="mit" data-t="edu">jennamk9 [at] mit [dot] edu</span></p>
+      </div>
+      <div>
+        <h2 class="vh">Elsewhere</h2>
+        <p>Profiles</p>
+        <div class="foot__links">
+          <a href="https://scholar.google.com/citations?user=bhNDuigAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://github.com/jennamk14" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://orcid.org/0009-0006-7301-5774" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://dblp.org/pid/362/9413" target="_blank" rel="noopener">DBLP</a>
+          <a href="https://www.linkedin.com/in/jenna-kline-00937ab2/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://bsky.app/profile/jennakline.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="vh">Site</h2>
+        <p>Pages</p>
+        <div class="foot__links">
+          <a href="publications.html">Publications</a>
+          <a href="projects.html">Projects &amp; experience</a>
+          <a href="datasets.html">Datasets &amp; tools</a>
+          <a href="news.html">News</a>
+          <a href="CV/Kline_CV.pdf">CV (PDF)</a>
+        </div>
+      </div>
+    </div>
+    <p class="foot__fine">© <span id="yr">2026</span> Jenna M. Kline</p>
+  </div>
+</footer>
 
-						<!-- SmartWilds -->
-						<section id="smartwilds">
-							<div class="container">
-								<h3 style="margin-bottom: 1em;">SmartWilds: Bridging Digital and Natural Worlds</h3>
-								<article style="display: flex; gap: 2em; align-items: flex-start; flex-wrap: wrap;">
-									<div style="flex: 1; min-width: 300px;">
-										<h4 style="margin-top: 0; font-size: 1.1em;">Autonomous Drones and Edge AI for Wildlife Conservation</h4>
-										<p>In collaboration with <a href="https://www.thewilds.org/">The Wilds</a>, we are developing
-											autonomous drones and edge AI systems for wildlife monitoring and conservation in this 10,000-acre
-											non-profit safari park and conservation center in southeastern Ohio.</p>
-
-										<p><strong>Project Overview:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Multi-modal wildlife monitoring dataset</li>
-											<li>Real-time behavior tracking and analysis</li>
-											<li>Edge computing for on-device processing</li>
-											<li>Integration with existing conservation workflows</li>
-										</ul>
-
-										<p><strong>Technologies:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Autonomous UAV systems</li>
-											<li>Computer vision and deep learning</li>
-											<li>Edge AI deployment</li>
-											<li>Multi-sensor data fusion</li>
-										</ul>
-									</div>
-									<div style="flex: 0 0 300px; min-width: 250px;">
-										<a href="https://imageomics.github.io/naturelab/">
-											<img src="images/thewildssafari.jpeg" alt="nature-labs" style="width: 100%; height: auto;" />
-										</a>
-										<p style="margin-top: 1.5em; display: flex; flex-wrap: wrap; gap: 0.5em;">
-											<a href="https://arxiv.org/pdf/2509.18894" class="button small">Read Preprint</a>
-											<a href="https://huggingface.co/collections/imageomics/smartwilds-6880ec9381da004aa5682cf6" class="button small">Dataset on HuggingFace</a>
-											<a href="https://imageomics.github.io/naturelab/" class="button small">Project Website</a>
-										</p>
-									</div>
-								</article>
-							</div>
-						</section>
-
-						<!-- FAIR^2 Drones -->
-						<section id="fair-drones">
-							<div class="container">
-								<h3 style="margin-bottom: 1em;">FAIR&sup2; Drones: An AI-Ready Standard for Cross-Domain Wildlife Drone Datasets</h3>
-								<article style="display: flex; gap: 2em; align-items: flex-start; flex-wrap: wrap;">
-									<div style="flex: 1; min-width: 300px;">
-										<h4 style="margin-top: 0; font-size: 1.1em;">A Standard for AI-Ready Wildlife Drone Data</h4>
-										<p>FAIR&sup2; Drones defines a standard for collecting, documenting, and sharing
-											wildlife drone datasets so they are Findable, Accessible, Interoperable, and
-											Reusable, ready for AI, and compliant with existing Darwin Core biodiversity standards. The standard bridges domains to make drone-based
-											wildlife data easier to combine, benchmark, and build models on.</p>
-
-										<p><strong>Key Features:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>AI-ready data standard for wildlife drone datasets</li>
-											<li>Consistent metadata and documentation practices</li>
-											<li>Cross-domain interoperability and reuse</li>
-											<li>Support for benchmarking and model development</li>
-										</ul>
-									</div>
-									<div style="flex: 0 0 300px; min-width: 250px;">
-										<a href="https://imageomics.github.io/fair_drones/">
-											<img src="images/flying_drones_new.png" alt="fair-drones" style="width: 100%; height: auto;" />
-										</a>
-										<p style="margin-top: 1.5em; display: flex; flex-wrap: wrap; gap: 0.5em;">
-											<a href="https://imageomics.github.io/fair_drones/" class="button small">Project Website</a>
-										</p>
-									</div>
-								</article>
-							</div>
-						</section>
-
-						<!-- KABR Tools -->
-						<section id="kabr">
-							<div class="container">
-								<h3 style="margin-bottom: 1em;">kabr-tools: Automated Framework for Multi-Species Behavioral Monitoring</h3>
-								<article style="display: flex; gap: 2em; align-items: flex-start; flex-wrap: wrap;">
-									<div style="flex: 1; min-width: 300px;">
-										<h4 style="margin-top: 0; font-size: 1.1em;">Open-Source System for Wildlife Behavior Analysis</h4>
-										<p>Watching wildlife at scale is hard—traditional field observations are slow and limited.
-											That's why we built kabr-tools: an open-source system using drones + ML to automatically
-											track multiple species and extract behavioral, social & spatial patterns.</p>
-
-										<p><strong>Core Capabilities:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Automated multi-species detection and tracking</li>
-											<li>Behavioral pattern extraction</li>
-											<li>Social network analysis</li>
-											<li>Spatial movement analysis</li>
-											<li>Temporal activity patterns</li>
-										</ul>
-
-										<p><strong>Technical Features:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Drone-based data collection pipeline</li>
-											<li>ML-powered individual identification</li>
-											<li>Automated behavior classification</li>
-											<li>Scalable processing for large datasets</li>
-											<li>Integration with ecological research workflows</li>
-										</ul>
-
-										<p><strong>Use Cases:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Wildlife population monitoring</li>
-											<li>Behavioral ecology research</li>
-											<li>Conservation status assessment</li>
-											<li>Habitat use analysis</li>
-										</ul>
-									</div>
-									<div style="flex: 0 0 300px; min-width: 250px;">
-										<a href="https://imageomics.github.io/KABR/">
-											<img src="images/kabr.gif" alt="kabr-tools" style="width: 100%; height: auto;" />
-										</a>
-										<p style="margin-top: 1.5em; display: flex; flex-wrap: wrap; gap: 0.5em;">
-											<a href="https://imageomics.github.io/KABR/" class="button small">Documentation</a>
-											<a href="https://arxiv.org/abs/2510.02030" class="button small">Read Preprint</a>
-											<a href="https://github.com/imageomics/KABR" class="button small">GitHub Repository</a>
-										</p>
-									</div>
-								</article>
-							</div>
-						</section>
-
-						<!-- ADAE Model -->
-						<section id="adae">
-							<div class="container">
-								<h3 style="margin-bottom: 1em;">AI-Driven Animal Ecology Workloads at the Edge</h3>
-								<article style="display: flex; gap: 2em; align-items: flex-start; flex-wrap: wrap;">
-									<div style="flex: 1; min-width: 300px;">
-										<h4 style="margin-top: 0; font-size: 1.1em;">Tool for Characterizing and Modeling ADAE Studies</h4>
-										<p>This tool helps researchers characterize and model AI-Driven Animal Ecology (ADAE) studies
-											at the edge. It provides insights into computational requirements, energy consumption,
-											and deployment strategies for edge-based wildlife monitoring systems.</p>
-
-										<p><strong>Key Features:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Workload characterization for edge deployments</li>
-											<li>Energy consumption modeling</li>
-											<li>Performance prediction</li>
-											<li>Resource allocation optimization</li>
-											<li>Interactive visualization tools</li>
-										</ul>
-
-										<p><strong>Applications:</strong></p>
-										<ul style="margin-top: 0;">
-											<li>Planning edge AI deployments</li>
-											<li>Optimizing hardware selection</li>
-											<li>Estimating field deployment requirements</li>
-											<li>Comparing different deployment strategies</li>
-										</ul>
-									</div>
-									<div style="flex: 0 0 300px; min-width: 250px;">
-										<a href="https://github.com/jennamk14/adae_model">
-											<img src="images/adae.png" alt="adae-model" style="width: 100%; height: auto;" />
-										</a>
-										<p style="margin-top: 1.5em; display: flex; flex-wrap: wrap; gap: 0.5em;">
-											<a href="https://jennamk14.github.io/adae_model/" class="button small">Try Interactive Tool</a>
-											<a href="https://github.com/jennamk14/adae_model" class="button small">GitHub Repository</a>
-										</p>
-									</div>
-								</article>
-							</div>
-						</section>
-
-						<section id="maneuver">
-							<div class="container">
-								<h3 style="margin-bottom: 1em;">Maneuver-Indexed Drone Testbed</h3>
-								<article>
-									<p>An interactive evaluation environment for testing context-aware, behavior-adaptive
-										wildlife drone systems across flight maneuvers and ecological conditions. The testbed
-										indexes system behavior by maneuver, enabling reproducible comparison of adaptive
-										navigation policies before field deployment.</p>
-									<p>Companion research artifact for <em>&ldquo;A Maneuver-Indexed Testbed for Context-Aware
-										Adaptive Wildlife Drones&rdquo;</em> (IEEE ACSOS-C 2026, peer-reviewed artifact paper, to appear).</p>
-									<p style="margin-top: 1.5em; display: flex; flex-wrap: wrap; gap: 0.5em;">
-										<a href="https://huggingface.co/spaces/imageomics/drone-maneuver-demo" class="button small">Interactive Demo</a>
-									</p>
-								</article>
-							</div>
-						</section>
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<a href="https://scholar.google.com/citations?user=bhNDuigAAAAJ&hl=en" target="_blank" class="icon"><i class="fa-brands fa-google-scholar fa-2x"></i></a>
-							<a href="https://www.linkedin.com/in/jenna-kline-00937ab2/" target="_blank" class="icon"><i class="fab fa-linkedin fa-2x"></i></a>
-							<a href="https://sites.google.com/view/jennamkline/about" target="_blank" class="icon"><i class="fab fa-blogger fa-2x"></i></a>
-							<br>
-							<ul class="copyright">
-								<li>&copy; Jenna M. Kline. All rights reserved.</li>
-								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<script>
+/* Anchors that used to live on this page moved to datasets.html.
+   Keep old external links working. */
+(function () {
+  var moved = ["wildwing","smartwilds","fair-drones","kabr","mmla",
+               "maneuver","adae","project-management"];
+  var h = location.hash.replace("#", "");
+  if (h && moved.indexOf(h) !== -1) location.replace("datasets.html#" + h);
+})();
+</script>
+<script src="data/tags.js"></script>
+<script src="data/publications.js"></script>
+<script src="data/projects.js"></script>
+<script src="data/talks.js"></script>
+<script src="data/experience.js"></script>
+<script src="assets/site.js"></script>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
 </html>
