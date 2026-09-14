@@ -54,7 +54,7 @@ const MENTORING = [
   {
     org: "Massachusetts Institute of Technology",
     date: "2026 – present",
-    body: "Supervised two summer undergraduate researchers on a salt-marsh monitoring study using drones and computer vision."
+    body: "Supervised two summer undergraduate researchers on a salt-marsh monitoring study using drones and computer vision. Their student-led project was presented as a poster at the ACM/IEEE Symposium on Edge Computing (SEC) 2026."
   },
   {
     org: "The Ohio State University",
@@ -87,6 +87,8 @@ const TEACHING = [
 /* Grants, awards, fellowships, and honors.
    `featured: true` also puts the entry on the homepage. */
 const AWARDS = [
+  { featured: true, name: "Best Artifact Award", detail: "IEEE Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), for &ldquo;A Maneuver-Indexed Testbed for Context-Aware Adaptive Wildlife Drones&rdquo;", date: "2026",
+    url: "https://huggingface.co/spaces/imageomics/drone-maneuver-demo" },
   { featured: true, name: "Presidential Fellow", detail: "The Ohio State University Presidential Fellowship", date: "2025 – 2026",
     url: "https://gradsch.osu.edu/news/2025/11/24/2025-26-presidential-fellowship-recipients" },
   { featured: true, name: "Robert May Prize", detail: "Best early-career-author paper, British Ecological Society", date: "2025",

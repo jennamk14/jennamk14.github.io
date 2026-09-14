@@ -62,7 +62,6 @@ const PUBLICATIONS = [
       abbrev: "ACSOS",
       url: "https://acsos.org/"
     },
-    status: "To appear",
     tags: ["cross-modal-sensing"],
     links: {}
   },
@@ -76,7 +75,7 @@ const PUBLICATIONS = [
       abbrev: "ACSOS-C",
       url: "https://acsos.org/"
     },
-    status: "To appear",
+    award: "ACSOS 2026 Best Artifact Award",
     tags: ["field-ai-infrastructure", "adaptive-autonomy"],
     media: { poster: "media/maneuver-grevys.webp" },
     featured: true,

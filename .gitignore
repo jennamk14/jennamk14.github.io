@@ -11,3 +11,5 @@ working_notes/*
 *.out
 *.fls
 *.fdb_latexmk
+
+statements/*

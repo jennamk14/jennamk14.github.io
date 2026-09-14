@@ -33,7 +33,7 @@ const TALKS = [
     link: { label: "Conference", url: "https://www.gctdf.org/conference-tracks" }
   },
   {
-    title: "Autonomous AI-Driven Environmental Sensing Systems",
+    title: "Autonomous AI-Driven Ecological Sensing Systems",
     type: "Poster",
     venue: "MIT and Boston University Rising Stars in EECS Workshop",
     date: "2025",
