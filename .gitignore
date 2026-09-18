@@ -12,4 +12,4 @@ working_notes/*
 *.fls
 *.fdb_latexmk
 
-statements/*
+statements/
