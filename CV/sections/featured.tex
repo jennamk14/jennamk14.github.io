@@ -1,9 +1,15 @@
+% R1 order: its own section near the top. Teaching order: first subsection of
+% RESEARCH OUTPUTS (inputs from sections/outputs.tex).
+\ifx\cvfocus\cvteachingfocus
+\subsection*{Featured Publications}
+\else
 \section{FEATURED PUBLICATIONS}
 \noindent
-\textit{Additional research outputs listed in subsequent section (p.~\pageref{sec:research-outputs}): F~featured, J~journal, C~conference, P~presentation, A~artifact; *~student mentee.}
+\textit{F~featured, J~journal, C~conference, P~presentation, A~artifact; *~student mentee.}
 Note: Computer science conference publications are archival full papers that undergo rigorous peer review, as is typical
 for journal publications. Venue acceptance rate (\textbf{AR}) and impact factor (\textbf{JIF}) reported where available.
 \vspace{1pt}
+\fi
 
 \begin{pubs}[label={[F\arabic*]}, ref={F\arabic*}]
 \item \ptitle{FAIR\textsuperscript{2} Drones: An AI-Ready Standard for Cross-Domain Wildlife Drone Datasets}
