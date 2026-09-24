@@ -546,7 +546,7 @@ const PUBLICATIONS = [
       url: "https://acsos.org/"
     },
     acceptanceRate: "23%",
-    tags: ["field-ai-infrastructure"],
+    tags: ["adaptive-autonomy"],
     featured: true,
     media: { poster: "media/herdtracking-poster.jpg", video: "media/herdtracking" },
     links: {

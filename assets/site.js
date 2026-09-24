@@ -31,20 +31,24 @@
         : v.full;
       out.push(name + (v.abbrev && v.abbrev !== v.full ? " (" + v.abbrev + ")" : ""));
     }
-    if (pub.acceptanceRate) out.push('<span class="pub__metric">Acceptance rate ' + pub.acceptanceRate + "</span>");
-    if (pub.impactFactor) out.push('<span class="pub__metric">Impact factor ' + pub.impactFactor + "</span>");
+    if (pub.acceptanceRate) out.push('<span class="pub__metric">Acceptance rate <strong>' + pub.acceptanceRate + "</strong></span>");
+    if (pub.impactFactor) out.push('<span class="pub__metric">Impact factor <strong>' + pub.impactFactor + "</strong></span>");
     if (pub.status) out.push('<span class="pub__status">' + pub.status + "</span>");
     return out.join('<span class="pub__sep">·</span>');
   }
 
-  /* Theme tags link back to their section in the research overview. */
+  /* Theme tags link back to their section in the research overview.
+     One "Research area(s):" label covers every tag on an entry. */
   function tags(list, base) {
     if (!list || !list.length || typeof TAGS === "undefined") return "";
-    return list.map(function (key) {
+    var links = list.map(function (key) {
       var t = TAGS[key];
       if (!t) return "";
       return '<a class="tag" href="' + (base || "") + t.anchor + '">' + t.label + "</a>";
-    }).join("");
+    }).filter(Boolean);
+    if (!links.length) return "";
+    return '<span class="tags"><span class="tags__label">Research area' +
+      (links.length > 1 ? "s" : "") + ": </span>" + links.join(", ") + "</span>";
   }
 
   function badges(pub) {

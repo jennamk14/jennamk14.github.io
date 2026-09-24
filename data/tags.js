@@ -11,17 +11,17 @@
 
 const TAGS = {
   "adaptive-autonomy": {
-    label: "Adaptive autonomy",
+    label: "adaptive autonomy",
     thrust: 1,
     anchor: "#adaptive-autonomy"
   },
   "cross-modal-sensing": {
-    label: "Cross-modal sensing",
+    label: "cross-modal sensing",
     thrust: 2,
     anchor: "#cross-modal-sensing"
   },
   "field-ai-infrastructure": {
-    label: "Data infrastructure",
+    label: "data infrastructure",
     thrust: 3,
     anchor: "#field-ai-infrastructure"
   }

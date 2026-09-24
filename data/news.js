@@ -9,6 +9,12 @@
 
 const NEWS = [
   {
+    date: "Sept 2026",
+    title: "Best Artifact Award at ACSOS 2026",
+    body: "Received the Best Artifact Award at the IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS) for “A Maneuver-Indexed Testbed for Context-Aware Adaptive Wildlife Drones.”",
+    highlight: true
+  },
+  {
     date: "Jul 2026",
     title: "Paper accepted to ACM/IEEE SEC 2026",
     body: "“A Blueprint for Cross-Modal Coordination at the Far Edge” was accepted as a full paper at the ACM/IEEE Symposium on Edge Computing."

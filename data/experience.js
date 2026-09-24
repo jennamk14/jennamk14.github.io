@@ -54,7 +54,7 @@ const MENTORING = [
   {
     org: "Massachusetts Institute of Technology",
     date: "2026 – present",
-    body: "Supervised two summer undergraduate researchers on a salt-marsh monitoring study using drones and computer vision. Their student-led project was presented as a poster at the ACM/IEEE Symposium on Edge Computing (SEC) 2026."
+    body: "Supervised four undergraduate researchers working on a salt-marsh monitoring study using drones and computer vision, including drone fieldwork at the Waquoit Bay National Estuarine Research Reserve. One student-led project was accepted to the SEC 2026 poster session."
   },
   {
     org: "The Ohio State University",
