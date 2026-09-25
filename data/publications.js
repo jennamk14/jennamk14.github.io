@@ -196,8 +196,12 @@ const PUBLICATIONS = [
     title: "WildBox: A Dataset and Benchmark for Aerial Monocular 3D Detection of African Savanna Wildlife",
     authors: ["V. Shukla", "K. Meier", "L. Laporte-Devylder", "C. R. Saint-Jean", "J. Kline", "B. R. Costelloe", "D. Tuia", "F. Remondino", "B. Risse"],
     year: 2026,
-    type: "Preprint",
-    venue: { full: "Submitted" },
+    type: "Conference Paper",
+    venue: {
+      full: "Conference on Neural Information Processing Systems, Datasets and Benchmarks Track",
+      abbrev: "NeurIPS"
+    },
+    acceptanceRate: "25%",
     tags: ["field-ai-infrastructure"],
     badges: ["dataset"],
     links: {

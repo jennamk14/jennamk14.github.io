@@ -10,6 +10,11 @@
 const NEWS = [
   {
     date: "Sept 2026",
+    title: "WildBox accepted to NeurIPS 2026",
+    body: "<a href=\"https://arxiv.org/abs/2606.21309\">“WildBox: A Dataset and Benchmark for Aerial Monocular 3D Detection of African Savanna Wildlife”</a>, a dataset paper led by Vandita Shukla in collaboration with <a href=\"https://wilddrone.eu/\">WildDrone</a>, was accepted to the NeurIPS 2026 Datasets and Benchmarks Track."
+  },
+  {
+    date: "Sept 2026",
     title: "Best Artifact Award at ACSOS 2026",
     body: "Received the Best Artifact Award at the IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS) for “A Maneuver-Indexed Testbed for Context-Aware Adaptive Wildlife Drones.”",
     highlight: true
