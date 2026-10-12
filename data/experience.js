@@ -10,7 +10,7 @@ const FIELDWORK = [
     place: "Massachusetts",
     date: "Summer 2026",
     role: "Team lead and drone pilot",
-    body: "Conducted drone fieldwork monitoring salt-marsh habitats with computer vision, supervising a team of undergraduate researchers. Part of the <a href=\"projects.html#coastal\">coastal resilience</a> project with Dr. Heidi Nepf, through MIT's Climate Project."
+    body: "Conducted drone fieldwork monitoring salt-marsh habitats with computer vision, supervising a team of undergraduate researchers. Part of the <a href=\"projects.html#coastal\">coastal resilience</a> project with <a href=\"https://nepf.mit.edu/current-members/\" target=\"_blank\" rel=\"noopener\">Dr. Heidi Nepf</a>, through MIT's Climate Project."
   },
   {
     site: "Ol Pejeta Conservancy",
@@ -54,7 +54,7 @@ const MENTORING = [
   {
     org: "Massachusetts Institute of Technology",
     date: "2026 – present",
-    body: "Supervised four undergraduate researchers working on a salt-marsh monitoring study using drones and computer vision, including drone fieldwork at the Waquoit Bay National Estuarine Research Reserve. One student-led project was accepted to the SEC 2026 poster session."
+    body: "Supervised four undergraduate researchers through the Undergraduate Research Opportunities Program (UROP) on a salt-marsh monitoring study using drones and computer vision, including drone fieldwork at the Waquoit Bay National Estuarine Research Reserve. One student-led project was accepted to the SEC 2026 poster session."
   },
   {
     org: "The Ohio State University",
@@ -114,6 +114,8 @@ const AWARDS = [
 /* Organizing, committees, and community roles.
    `highlight: true` marks a leadership / high-impact role. */
 const SERVICE = [
+  { highlight: true, name: "Artifact Evaluation Co-chair", detail: "ACSOS 2027 organizing committee", date: "2027",
+    url: "https://2027.acsos.org/committee/acsos-2027-organizing-committee" },
   { name: "Program Committee Member", detail: "AI4Nature Workshop on Computer Vision and AI for Environmental Monitoring, Biodiversity Analysis, and Ecosystem Restoration, IEEE AVSS", date: "2026",
     url: "https://www.ai4nature.tech/" },
   { highlight: true, name: "Community Building Co-chair", detail: "ACSOS 2026; organized the community-building seminar series", date: "2026 – present",

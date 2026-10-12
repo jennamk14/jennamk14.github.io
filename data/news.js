@@ -20,6 +20,11 @@ const NEWS = [
     highlight: true
   },
   {
+    date: "Sept 2026",
+    title: "Aspen Institute publishes AI for Discovery report",
+    body: "I participated in the Ecosystem &amp; Biodiversity Science roundtables convened by the Aspen Institute's Science &amp; Society Program, informing the <a href=\"https://www.aspeninstitute.org/wp-content/uploads/2026/09/AI-for-Discovery-Aspen-Institute.pdf\" target=\"_blank\" rel=\"noopener\">AI for Discovery report</a>, which identifies opportunities and priorities for multimodal sensing, AI-ready data, open infrastructure, causal modeling, and community-centered data governance."
+  },
+  {
     date: "Jul 2026",
     title: "Paper accepted to ACM/IEEE SEC 2026",
     body: "“A Blueprint for Cross-Modal Coordination at the Far Edge” was accepted as a full paper at the ACM/IEEE Symposium on Edge Computing."
@@ -42,7 +47,7 @@ const NEWS = [
   {
     date: "Jul 2026",
     title: "Starting a postdoc at MIT",
-    body: "Joining Dr. Heidi Nepf's group in MIT Civil &amp; Environmental Engineering, working on drones and computer vision for coastal monitoring."
+    body: "Joining <a href=\"https://nepf.mit.edu/current-members/\" target=\"_blank\" rel=\"noopener\">Dr. Heidi Nepf</a>'s group in MIT Civil &amp; Environmental Engineering, working on drones and computer vision for coastal monitoring."
   },
   {
     date: "May 2026",

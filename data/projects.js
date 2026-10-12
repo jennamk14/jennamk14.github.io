@@ -112,7 +112,7 @@ const PROJECTS = [
     thrust: 2,
     tags: ["adaptive-autonomy"],
     image: "media/coastal-waquoit.webp",
-    collaborators: "With Dr. Heidi Nepf, MIT Civil &amp; Environmental Engineering, through the <a href=\"https://climateproject.mit.edu/building-coastal-resilience\" target=\"_blank\" rel=\"noopener\">Climate Project at MIT</a>",
+    collaborators: "With <a href=\"https://nepf.mit.edu/current-members/\" target=\"_blank\" rel=\"noopener\">Dr. Heidi Nepf</a>, MIT Civil &amp; Environmental Engineering, through the <a href=\"https://climateproject.mit.edu/building-coastal-resilience\" target=\"_blank\" rel=\"noopener\">Climate Project at MIT</a>",
     links: {
       project: "https://climateproject.mit.edu/building-coastal-resilience"
     },
