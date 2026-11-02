@@ -1,9 +1,9 @@
 % R1 order: its own section near the top. Teaching order: first subsection of
 % RESEARCH OUTPUTS (inputs from sections/outputs.tex).
 \ifx\cvfocus\cvteachingfocus
-\subsection*{Featured Publications}
+\subsection*{Featured Publications}\label{sec:featured}
 \else
-\section{FEATURED PUBLICATIONS}
+\section{FEATURED PUBLICATIONS}\label{sec:featured}
 \noindent
 \textit{F~featured, J~journal, C~conference, P~presentation, A~artifact; *~student mentee.}
 Note: Computer science conference publications are archival full papers that undergo rigorous peer review, as is typical
@@ -14,7 +14,7 @@ for journal publications. Venue acceptance rate (\textbf{AR}) and impact factor 
 \begin{pubs}[label={[F\arabic*]}, ref={F\arabic*}]
 \item \ptitle{FAIR\textsuperscript{2} Drones: An AI-Ready Standard for Cross-Domain Wildlife Drone Datasets}
 \pauth{\textbf{J.~Kline}, K.~Meier, V.~Shukla, E.~G.~A.~Rolland, E.~Iannino, et al.}
-\pvenue{Manuscript under review}{2026}{\textit{Journal paper.}}\label{pub:fair2}
+\pvenue{Manuscript in preparation}{2026}{\textit{Journal paper.}}\label{pub:fair2}
 
 \item \ptitle{A Blueprint for Cross-Modal Coordination at the Far Edge}
 \pauth{\textbf{J.~Kline}, A.~Potlapally*, H.~Subramoni, T.~Berger-Wolf, and C.~Stewart}
@@ -41,12 +41,12 @@ Associated work awarded \textbf{First Place in the Student Research Competition 
 
 \item \ptitle{Characterizing and Modeling AI-Driven Animal Ecology Studies at the Edge}
 \pauth{\textbf{J.~Kline}, A.~O'Quinn, T.~Berger-Wolf, and C.~Stewart}
-\pvenue{ACM/IEEE Symposium on Edge Computing (SEC)}{2024}{\textit{Conference full paper.} \textbf{27\%} AR.}
+\pvenue{ACM/IEEE Symposium on Edge Computing (SEC)}{2024}{\textit{Conference full paper.} \textbf{27\%} AR.}\label{pub:adae-sec}
 
 \item \ptitle{A Framework for Autonomic Computing for In Situ Imageomics}
 \pauth{\textbf{J.~Kline}, C.~Stewart, T.~Berger-Wolf, M.~Ramirez, S.~Stevens, et al.}
 \pvenue{IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS)}{2023}{\\
-\textit{Conference vision paper.} \textbf{23\%} AR.}
+\textit{Conference vision paper.} \textbf{23\%} AR.}\label{pub:framework}
 \end{pubs}
 
 

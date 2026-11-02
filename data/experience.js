@@ -89,6 +89,8 @@ const TEACHING = [
 const AWARDS = [
   { featured: true, name: "Best Artifact Award", detail: "IEEE Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), for &ldquo;A Maneuver-Indexed Testbed for Context-Aware Adaptive Wildlife Drones&rdquo;", date: "2026",
     url: "https://huggingface.co/spaces/imageomics/drone-maneuver-demo" },
+  { featured: true, name: "Path of Professorship", detail: "Competitive faculty-preparation program, MIT Career Advising &amp; Professional Development", date: "2026",
+    url: "https://capd.mit.edu/flagship-graduate-student-professional-development-program-the-path-of-professorship/" },
   { featured: true, name: "Presidential Fellow", detail: "The Ohio State University Presidential Fellowship", date: "2025 – 2026",
     url: "https://gradsch.osu.edu/news/2025/11/24/2025-26-presidential-fellowship-recipients" },
   { featured: true, name: "Robert May Prize", detail: "Best early-career-author paper, British Ecological Society", date: "2025",
@@ -114,7 +116,7 @@ const AWARDS = [
 /* Organizing, committees, and community roles.
    `highlight: true` marks a leadership / high-impact role. */
 const SERVICE = [
-  { highlight: true, name: "Artifact Evaluation Co-chair", detail: "ACSOS 2027 organizing committee", date: "2027",
+  { highlight: true, name: "Artifacts Co-chair", detail: "ACSOS 2027, IEEE International Conference on Autonomic Computing and Self-Organizing Systems", date: "2027",
     url: "https://2027.acsos.org/committee/acsos-2027-organizing-committee" },
   { name: "Program Committee Member", detail: "AI4Nature Workshop on Computer Vision and AI for Environmental Monitoring, Biodiversity Analysis, and Ecosystem Restoration, IEEE AVSS", date: "2026",
     url: "https://www.ai4nature.tech/" },

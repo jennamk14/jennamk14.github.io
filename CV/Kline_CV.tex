@@ -93,6 +93,7 @@
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
 \usepackage{tabularx}
+\usepackage{longtable}
 \usepackage{needspace}   % reserve vertical space so a block isn't split across pages
 \newlength{\fullcollw}
 \setlength{\fullcollw}{0.47\textwidth}
@@ -255,7 +256,7 @@
 \newcommand{\cvsection}[1]{\IfFileExists{./sections/#1.tex}{\input{./sections/#1}}{\input{\cvroot sections/#1}}}
 \def\cvteachingfocus{teaching}
 \providecommand{\cvsummarytitle}{Cyber-Physical Systems for Adaptive Ecological Sensing at the Far Edge}
-\providecommand{\cvsummary}{I build \textbf{cyber-physical systems} for autonomous environmental sensing in dynamic, resource-constrained field settings. My research advances \textbf{distributed intelligence}, \textbf{edge AI}, and \textbf{adaptive autonomy} to coordinate heterogeneous sensors and robots, enabling \textbf{cross-modal systems} to adapt what, where, and when they observe. I deploy these systems across \textbf{ecology}, \textbf{biodiversity monitoring}, and \textbf{coastal and climate resilience}, developing the foundations for persistent, adaptive observation of complex environmental systems.}
+\providecommand{\cvsummary}{I build \textbf{cyber-physical systems} for autonomous environmental sensing in dynamic, resource-constrained field settings. My research advances \textbf{embodied intelligence}, \textbf{edge AI}, and \textbf{adaptive autonomy} to coordinate heterogeneous sensors and robots, enabling \textbf{cross-modal systems} to adapt what, where, and when they observe. I deploy these systems across \textbf{ecology}, \textbf{biodiversity monitoring}, and \textbf{coastal and climate resilience}, developing the foundations for persistent, adaptive observation of complex environmental systems.}
 
 \begin{document}
 \thispagestyle{firstpage}% page 1 shows only the page number in the footer
@@ -300,27 +301,32 @@
 
 % ---------------------------------------------------------------------------
 % Section order (CV feedback, Sep 2026): tailored research summary first, then
-% academics (education, appointments), then research for R1 applications or
-% mentoring & teaching for undergraduate-focused applications.
+% Education and Training (postdoc, PhD, BS), then project-based Research
+% Experience (replaces the old Academic Experience + Field Experience sections;
+% sections/experience.tex and sections/field.tex are kept for reference but no
+% longer input). R1 focus continues with featured publications; teaching focus
+% puts mentoring & teaching before research.
 % ---------------------------------------------------------------------------
 \cvsection{summary}
 \cvsection{education}
-\cvsection{experience}
 \ifx\cvfocus\cvteachingfocus
   \cvsection{mentoring}
+  \newpage
+  \cvsection{research}
   \cvsection{service}
   % featured publications appear inside research outputs in this order
   \cvsection{awards}
-  \cvsection{field}
   \cvsection{skills}
 \else
   \cvsection{featured}
-  \textit{Remaining research outputs (journals, conferences, presentations, artifacts) included in the research outputs section (p.~\pageref{sec:research-outputs}).}
   \cvsection{awards}
-  \cvsection{field}
-  \cvsection{skills}
+  \cvsection{research}
+  % \cvsection{featured}
+  \textit{Remaining research outputs (journals, conferences, presentations, artifacts) included in the research outputs section (p.~\pageref{sec:research-outputs}).}
+  
   \cvsection{mentoring}
   \cvsection{service}
+  \cvsection{skills}
 \fi
 \cvsection{outputs}
 \cvsection{references}

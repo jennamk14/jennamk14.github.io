@@ -110,7 +110,7 @@ const PUBLICATIONS = [
     authors: ["J. Kline", "K. Meier", "V. Shukla", "E. G. A. Rolland", "E. Iannino", "L. Laporte-Devylder", "C. A. M. Catricheo", "B. Costelloe", "E. Campolongo", "H. S. Midtiby", "et al."],
     year: 2026,
     type: "Preprint",
-    venue: { full: "Manuscript under review" },
+    venue: { full: "Manuscript in preparation" },
     tags: ["field-ai-infrastructure"],
     featured: true,
     media: { poster: "media/fair-drones-venn.webp" },
@@ -134,6 +134,20 @@ const PUBLICATIONS = [
     links: {
       paper: "https://doi.org/10.3390/drones10030178"
     }
+  },
+  {
+    title: "Dreams Are Cheaper Than Flights: Curated World-Model Data Improves Aerial Detection",
+    authors: ["R. Katole", "V. Y. Patil", "J. M. Kline", "C. Stewart"],
+    year: 2026,
+    type: "Workshop Paper",
+    venue: {
+      full: "Sim2Real2Field Workshop at the Conference on Robot Learning",
+      abbrev: "Sim2Real2Field @ CoRL",
+      url: "https://2026.corl.org/"
+    },
+    status: "To appear",
+    tags: ["field-ai-infrastructure"],
+    links: {}
   },
   {
     title: "Cross-Modal Corroboration for Annotation-Free Wildlife Monitoring",
@@ -176,7 +190,7 @@ const PUBLICATIONS = [
     authors: ["L. J. Pollock", "P. H. P. Braga", "C. R. Florian", "K. Hébert", "J. Kline", "R. P. Lyon", "J. Van Stan", "S. Beery", "M. E. Dillon", "D. Ellis Soto", "B. Goodman", "N. Hanan", "M. A. Jarzyna", "J. Kitzes", "A. Kügler", "D. Mosse", "Y. Song", "J. Larkin"],
     year: 2026,
     type: "Preprint",
-    venue: { full: "Manuscript under review" },
+    venue: { full: "Manuscript in minor revision" },
     tags: ["adaptive-autonomy"],
     links: {
       preprint: "https://doi.org/10.32942/X2S94C"
@@ -201,7 +215,7 @@ const PUBLICATIONS = [
       full: "Conference on Neural Information Processing Systems, Datasets and Benchmarks Track",
       abbrev: "NeurIPS"
     },
-    acceptanceRate: "25%",
+    acceptanceRate: "25.8%",
     tags: ["field-ai-infrastructure"],
     badges: ["dataset"],
     links: {

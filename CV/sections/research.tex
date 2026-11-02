@@ -1,0 +1,69 @@
+\section{RESEARCH EXPERIENCE}
+% Project-based research section (job-consultant feedback, Sep 2026). Five
+% projects, four doctoral/postdoctoral in reverse chronological order, then LANL. Field campaigns are folded into
+% the project they served (the standalone Field Experience section is retired).
+%
+% \project{title}{dates}{institution / role / advisor line}
+% Prints the role line first (bold, with dates), then the project title (italic).
+% Each entry: bullets (Role, Outputs, etc.) for scanning.
+\newcommand{\project}[3]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}X r@{}}\textbf{#3} & #2\end{tabularx}\par\nobreak\vspace{0.5pt}%
+  {\noindent\textit{#1}\par}\nobreak\vspace{2pt}}
+% pbullets: compact scannable bullets for role and outputs
+\newlist{pbullets}{itemize}{1}
+\setlist[pbullets]{label=\textbullet, leftmargin=2.6em, labelsep=0.5em, itemsep=0.5pt, topsep=0.5pt, parsep=0pt, partopsep=0pt}
+
+{\small
+\setlength{\parskip}{1pt}
+
+\project{Multi-Scale Sensing for Coastal Salt-Marsh Resilience}{Jun 2026 --- present}%
+{Postdoctoral Associate, Department of Civil and Environmental Engineering, MIT $\cdot$ \href{https://climateproject.mit.edu/}{Climate Project at MIT}}%
+\begin{pbullets}
+  \item \textit{Role:} Led the 2026 \textbf{drone field campaign} at Waquoit Bay NERR (team lead, FAA Part~107 pilot); developing edge-native drone workflows for vegetation monitoring.
+  \item \textit{Mentoring:} \textbf{Supervising four undergraduate researchers}.
+  \item \textit{Outputs:} \textbf{Student-led} refereed poster at \textbf{SEC 2026}~[\ref{pub:saltmarsh-sec}]; manuscripts in preparation.
+\end{pbullets}
+\vspace{4pt}
+
+\project{SmartWilds: Cross-Modal Coordination for Biodiversity Monitoring}{2025 --- 2026}%
+{Project lead, Department of Computer Science and Engineering, OSU}%
+\begin{pbullets}
+  \item \textit{Role:} \textbf{Led study design} and the 2025 \textbf{field campaign} at The Wilds with an undergraduate--PhD team; developed a \textbf{record--characterize--synthesize methodology} for provisioning cross-modal systems.
+  \item \textit{Funding:} \textbf{20,000 GPU-hour NSF NAIRR Pilot allocation}; \textbf{OSU Presidential Fellowship}.
+  \item \textit{Outputs:} \textbf{SEC 2026} full paper~[\ref{pub:xmodal-blueprint}]; \textbf{student-led} CV4Animals @ CVPR 2026 paper~[\ref{pub:xmodal-corrob}]; Imageomics @ NeurIPS 2025 dataset paper~[\ref{pub:smartwilds}]; SmartWilds datasets and models~[\ref{art:smartwilds}]; four TDWG 2026 talks.
+\end{pbullets}
+\vspace{4pt}
+
+\project{Autonomous, Behavior-Adaptive Drones for Animal Ecology}{2023 --- 2026}%
+{Doctoral Researcher (dissertation research), OSU $\cdot$ Visiting Doctoral Researcher, \href{https://wilddrone.eu/}{WildDroneEU} consortium}%
+\begin{pbullets}
+  \item \textit{Role:} Built \textbf{WildWing}, an open-source autonomous UAS, and a \textbf{behavior-adaptive navigation pipeline}; released the \textbf{KABR} and \textbf{MMLA} collections (\textbf{360K+ downloads}).
+  \item \textit{Fieldwork:} Led \textbf{drone field campaigns} in Kenya (Mpala 2023; Ol Pejeta 2025, 2026) and Ohio (The Wilds 2025); WildDroneEU research visits (2024).
+  \item \textit{Funding \& mentoring:} \textbf{OSU Alumni Grant for Graduate Research and Scholarship}; \textbf{co-supervised a master's thesis} (University of Bologna).
+  \item \textit{Outputs:} \textbf{Methods in Ecology and Evolution} 2026~[\ref{pub:wildwing}] and 2025 (\textbf{Robert May Prize})~[\ref{pub:collective-behaviour}]; ACSOS 2026 \textbf{Best Artifact Award}~[\ref{pub:maneuver}]; ACSOS 2024 \textbf{Best Poster Award}~[\ref{pub:thesis-decentralized}]; SEC 2025 \textbf{Student Research Competition, first place}~[\ref{pub:src-navigation}]; DroneSys @ SEC 2025~[\ref{pub:behavior-adaptive}]; WACVW 2024~[\ref{pub:kabr}]; CV4Animals @ CVPR 2026~[\ref{pub:uav-reid}] and 2025~[\ref{pub:mmla}]; WildWing~[\ref{art:wildwing}], KABR~[\ref{art:kabr}], MMLA~[\ref{art:mmla}].
+\end{pbullets}
+\vspace{4pt}
+
+\project{Edge Infrastructure and AI-Ready Data for Ecological Sensing}{2022 --- 2026}%
+{Doctoral Researcher (dissertation research), OSU}%
+\begin{pbullets}
+  \item \textit{Role:} Characterized \textbf{AI-driven animal ecology (ADAE) workloads}; developed \textbf{trace-replay and performance models} for edge configurations; led the \textbf{FAIR\textsuperscript{2} Drones} data standard and \textbf{kabr-tools} pipeline.
+  \item \textit{Senior author:} Environment-aware dynamic pruning for distributed inference (\textbf{1.5$\times$ throughput, 3$\times$ SLO attainment}).
+  \item \textit{Outputs:} \textbf{SEC 2024} full paper~[\ref{pub:adae-sec}]; \textbf{IEEE EDGE 2025} full paper~[\ref{pub:edge-pruning}]; ACSOS 2023 vision paper~[\ref{pub:framework}]; Sim2Real2Field @ CoRL 2026~[\ref{pub:dreams}]; FAIR\textsuperscript{2} Drones manuscript in preparation~[\ref{pub:fair2}]; TDWG~[\ref{pres:fair2-tdwg}], FARR~[\ref{pres:fair2-farr}], and \textbf{invited ESA 2026} talks; FAIR\textsuperscript{2} Drones~[\ref{art:fair2}] and kabr-tools~[\ref{art:kabr-tools}] software.
+\end{pbullets}
+\vspace{4pt}
+
+\project{High-Performance Computing Filesystem Characterization}{Summer 2023}%
+{Supercomputer Institute Graduate Intern, Los Alamos National Laboratory}%
+\begin{pbullets}
+  \item \textit{Role:} Built, configured, and tested an HPC cluster from scratch; led the filesystem characterization project.
+  \item \textit{Outputs:} \textbf{SC23} Graduate Posters, \textbf{ACM Student Research Competition}~[\ref{pres:sc23}].
+\end{pbullets}
+\vspace{4pt}
+
+\noindent\textit{Dissertation research supported by the NSF \href{https://imageomics.osu.edu/}{Imageomics} (2118240) and \href{https://icicle.osu.edu/}{ICICLE} (2112606) Institutes, the NSF--NSERC \href{https://www.biodiversityai.org/}{AI and Biodiversity Change (ABC) Center} (2330423), an OSU Presidential Fellowship, and an OSU Alumni Grant for Graduate Research.}}\par
+
+
+%----------------------------------------------------------------------------------------
+%	FEATURED PUBLICATIONS
+%----------------------------------------------------------------------------------------
